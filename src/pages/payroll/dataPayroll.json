@@ -1,0 +1,47 @@
+[
+    {
+        "date": "2025-01-25T01:56:52Z",
+        "gaji_pokok": 10000000,
+        "tunjangan_kehadiran": 500000,
+        "tunjangan_makan": 500000,
+        "tunjangan_transport": 1500000,
+        "bpjs_kesehatan": 100000,
+        "bpjs_tk": 100000,
+        "pph21": 600000,
+        "lembur": 1200000,
+        "gaji_bruto": 1200000,
+        "denda": 350000,
+        "bonus": 500000,
+        "total_gaji": 12850000
+    },
+    {
+        "date": "2025-02-26T01:56:52Z",
+        "gaji_pokok": 10000000,
+        "tunjangan_kehadiran": 500000,
+        "tunjangan_makan": 500000,
+        "tunjangan_transport": 1500000,
+        "bpjs_kesehatan": 100000,
+        "bpjs_tk": 100000,
+        "pph21": 600000,
+        "lembur": 1200000,
+        "gaji_bruto": 1200000,
+        "denda": 350000,
+        "bonus": 500000,
+        "total_gaji": 12850000
+    },
+    {
+        "date": "2025-03-25T01:56:52Z",
+        "gaji_pokok": 10000000,
+        "tunjangan_kehadiran": 500000,
+        "tunjangan_makan": 500000,
+        "tunjangan_transport": 1500000,
+        "bpjs_kesehatan": 100000,
+        "bpjs_tk": 100000,
+        "pph21": 600000,
+        "lembur": 1200000,
+        "gaji_bruto": 1200000,
+        "denda": 350000,
+        "bonus": 500000,
+        "total_gaji": 12850000
+    }
+]

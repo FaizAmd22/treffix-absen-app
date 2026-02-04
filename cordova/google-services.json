@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217968576150",
+    "project_id": "bipro-treffix",
+    "storage_bucket": "bipro-treffix.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217968576150:android:f17022a05e8a826d3564b7",
+        "android_client_info": {
+          "package_name": "com.treffix.bihuman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdxwVx6--WFzqp47BNytSK1l57nvgNRWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

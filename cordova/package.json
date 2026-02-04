@@ -1,0 +1,84 @@
+{
+  "name": "io.framework7.myapp",
+  "displayName": "Ngabsen",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^14.0.1",
+    "cordova-ios": "^7.1.1",
+    "cordova-plugin-android-permissions": "^1.1.5",
+    "cordova-plugin-camera": "^8.0.0",
+    "cordova-plugin-camera-preview": "^0.14.0",
+    "cordova-plugin-device": "^3.0.0",
+    "cordova-plugin-file": "^8.1.3",
+    "cordova-plugin-file-transfer": "^2.0.0",
+    "cordova-plugin-fingerprint-aio": "^6.0.0",
+    "cordova-plugin-geolocation": "^5.0.0",
+    "cordova-plugin-inappbrowser": "^6.0.0",
+    "cordova-plugin-ios-camera-permissions": "^1.2.0",
+    "cordova-plugin-keyboard": "^1.2.0",
+    "cordova-plugin-screen-orientation": "^3.0.4",
+    "cordova-plugin-statusbar": "^4.0.0",
+    "cordova-support-google-services": "^1.4.1",
+    "cordova.plugins.diagnostic": "github:dpa99c/cordova-diagnostic-plugin",
+    "es6-promise-plugin": "^4.2.2",
+    "wonderpush-cordova-sdk": "^3.4.0",
+    "wonderpush-cordova-sdk-fcm": "^1.0.8"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-keyboard": {},
+      "cordova-plugin-fingerprint-aio": {},
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-ios-camera-permissions": {
+        "CAMERA_USAGE_DESCRIPTION": "This app needs camera access",
+        "MICROPHONE_USAGE_DESCRIPTION": "This app needs microphone access",
+        "PHOTOLIBRARY_ADD_USAGE_DESCRIPTION": "This app needs write-access to photo library",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "This app needs read/write-access photo library access"
+      },
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-file": {
+        "ANDROIDX_WEBKIT_VERSION": "1.4.0"
+      },
+      "cordova-plugin-inappbrowser": {},
+      "cordova.plugins.diagnostic": {
+        "ANDROIDX_VERSION": "1.0.0",
+        "ANDROIDX_APPCOMPAT_VERSION": "1.3.1"
+      },
+      "cordova-plugin-device": {},
+      "cordova-plugin-camera": {
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "cordova-plugin-file-transfer": {},
+      "cordova-support-google-services": {},
+      "wonderpush-cordova-sdk": {
+        "CLIENT_ID": "625771f1a66e6730011621c025057104dbdda313",
+        "CLIENT_SECRET": "661ccb534a47aa02d3159822fe233adce67a1906365f4dfc93b89465afdf250d",
+        "LOGGING": "false",
+        "AUTO_INIT": "true",
+        "REQUIRES_USER_CONSENT": "false"
+      },
+      "wonderpush-cordova-sdk-fcm": {
+        "SENDER_ID": "772385984332"
+      },
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-camera-preview": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

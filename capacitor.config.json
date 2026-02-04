@@ -1,0 +1,6 @@
+{
+  "appId": "com.treffix.ngabsen",
+  "appName": "Ngabsen",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

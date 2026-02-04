@@ -1,0 +1,32 @@
+{
+  "cwd": "D:\\Work\\Framework7",
+  "type": [
+    "cordova"
+  ],
+  "name": "Ngabsen",
+  "framework": "react",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": false,
+    "color": "#1d8b8e",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.myapp",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen",
+      "cordova-plugin-fingerprint-aio"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "android": {
+        "release": {
+            "keystore": "./android.keystore",
+            "storePassword": "absenIn",
+            "alias": "treffix",
+            "password" : "absenIn",
+            "keystoreType": "",
+            "packageType": "bundle"
+        }
+    },
+    "ios": {
+        "debug": {
+            "buildFlag": [
+            "EXCLUDED_ARCHS=arm64",
+            "OTHER_LDFLAGS=$(OTHER_LDFLAGS) -framework Accelerate"
+            ]
+        }
+    }
+}
