@@ -17,7 +17,7 @@ const PerformanceChart = ({ data: pointsData }) => {
         if (chartRef.current) {
             const chart = chartRef.current.ctx;
             const gradientFill = chart.createLinearGradient(0, 0, 0, 250);
-            gradientFill.addColorStop(0, 'rgba(40, 111, 243, 0.5)');
+            gradientFill.addColorStop(0, 'rgba(29, 138, 142, 0.5)');
             gradientFill.addColorStop(1, 'rgba(40, 111, 243, 0)');
             setGradient(gradientFill);
         }
@@ -48,13 +48,13 @@ const PerformanceChart = ({ data: pointsData }) => {
             {
                 label: 'Total Point',
                 data: cumulativePoints.map(point => point.point),
-                borderColor: '#476BD8',
-                backgroundColor: gradient || 'rgba(40, 111, 243, 0.5)',
+                borderColor: '#1d8b8e',
+                backgroundColor: gradient || 'rgba(29, 138, 142, 0.5)',
                 fill: true,
                 tension: 0,
                 pointRadius: 5,
-                pointBackgroundColor: '#476BD8',
-                pointBorderColor: 'rgba(40, 111, 243, 0.4)',
+                pointBackgroundColor: '#1d8b8e',
+                pointBorderColor: 'rgba(29, 138, 142, 0.4)',
                 pointBorderWidth: 4,
                 pointHoverRadius: 6,
             }
