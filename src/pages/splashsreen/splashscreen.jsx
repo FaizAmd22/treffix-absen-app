@@ -13,16 +13,9 @@ const Splashscreen = () => {
     const fetchData = async () => {
         try {
             const fetchUser = await API.get("/mobile/auth/me");
-            const fetchKtp = await API.get("/mobile/employees/personal");
-            const getSteps = await API.get("/mobile/employees/onboarding/steps");
-
-            const dataKtp = fetchKtp.data.payload;
             const userData = fetchUser.data.payload;
-            const completedSteps = getSteps.data.payload?.completed_steps || [];
 
-            const hasKTP = dataKtp.documents?.some(doc => doc.document_name?.toLowerCase() === 'ktp');
-
-            if (hasKTP && completedSteps.includes("employe_data")) {
+            if (userData) {
                 dispatch(updateUser(userData));
                 f7.views.main.router.navigate("/home/", { clearPreviousHistory: "true" })
             } else {

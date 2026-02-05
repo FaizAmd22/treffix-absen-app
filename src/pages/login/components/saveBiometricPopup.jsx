@@ -1,6 +1,4 @@
-import { Button, f7, Popup } from 'framework7-react'
-import React from 'react'
-import { IoMdClose } from 'react-icons/io'
+import { f7, Popup } from 'framework7-react'
 import { useSelector } from 'react-redux'
 import { selectSettings } from '../../../slices/settingsSlice'
 import { selectLanguages } from '../../../slices/languagesSlice'
@@ -20,18 +18,25 @@ const SaveBioMetricPopup = ({ popupOpened, setPopupOpened, token }) => {
             await BiometricAuth.saveToken(token, language);
             localStorage.setItem('isBiometric', 'true');
 
-            // f7.dialog.alert(translate('alert_biometric_saved', language));
             showToast(translate('alert_biometric_saved', language), theme)
         }
 
         setPopupOpened(false)
-        f7.views.main.router.navigate('/loading/');
+        f7.views.main.router.navigate('/home/', {
+            reloadCurrent: false,
+            replaceState: true,
+            clearPreviousHistory: true,
+        });
     }
 
     const handleCancel = () => {
         setPopupOpened(false)
         localStorage.setItem('isBiometric', 'false');
-        f7.views.main.router.navigate('/loading/');
+        f7.views.main.router.navigate('/home/', {
+            reloadCurrent: false,
+            replaceState: true,
+            clearPreviousHistory: true,
+        });
     }
 
     return (
