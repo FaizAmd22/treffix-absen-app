@@ -351,7 +351,7 @@ const NotificationsPage = () => {
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px" }}>
-                                                        <div style={{ background: "rgba(40, 111, 243, 0.05)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                                             {/* <img src={filterImage(item.attachments.data.type)} alt="OffIcon" style={{ width: "60%", height: "60%", objectFit: "cover" }} /> */}
                                                             {filterImage(item.attachments.data.type)}
                                                         </div>
@@ -402,8 +402,8 @@ const NotificationsPage = () => {
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px" }}>
-                                                        <div style={{ background: "rgba(40, 111, 243, 0.05)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                                            <img src={filterImage(item.attachments.data.type)} alt="OffIcon" style={{ width: "60%", height: "60%", objectFit: "cover" }} />
+                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                            {filterImage(item.attachments.data.type)}
                                                         </div>
 
                                                         <p style={{ fontSize: "var(--font-sm)", fontWeight: 700, margin: 0 }}>{item?.title}</p>
@@ -467,8 +467,8 @@ const NotificationsPage = () => {
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px", paddingBottom: 0 }}>
-                                                        <div style={{ background: "rgba(40, 111, 243, 0.05)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                                            <img src={filterImage(item.attachments.data.type)} alt="OffIcon" style={{ width: "60%", height: "60%", objectFit: "cover" }} />
+                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                            {filterImage(item.attachments.data.type)}
                                                         </div>
 
                                                         <p style={{ fontSize: "var(--font-sm)", fontWeight: 700, margin: 0 }}>{item?.title}</p>
@@ -519,8 +519,8 @@ const NotificationsPage = () => {
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px", paddingBottom: 0 }}>
-                                                        <div style={{ background: "rgba(40, 111, 243, 0.05)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                                            <img src={filterImage(item.attachments.data.type)} alt="OffIcon" style={{ width: "60%", height: "60%", objectFit: "cover" }} />
+                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                            {filterImage(item.attachments.data.type)}
                                                         </div>
 
                                                         <p style={{ fontSize: "var(--font-sm)", fontWeight: 700, margin: 0 }}>{item?.title}</p>
