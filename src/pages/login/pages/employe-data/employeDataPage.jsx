@@ -10,7 +10,7 @@ const EmployeDataPage = () => {
 
     return (
         <Page style={{ background: theme === "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)" }}>
-            <div style={{ textAlign: "center", width: "100%", background: "linear-gradient(1deg,rgba(40, 111, 243, 0) 40%, rgba(40, 111, 243, 0.5) 100%)", color: theme === "light" ? "black" : "white" }}>
+            <div style={{ textAlign: "center", width: "100%", background: "linear-gradient(1deg,transparent 40%, var(--bg-primary-green) 100%)", color: theme === "light" ? "black" : "white" }}>
                 <div style={{ width: "100%", height: "450px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <img src={Image} alt="Dokumen" style={{ width: "65%", height: "450px", objectFit: "contain" }} />
                 </div>

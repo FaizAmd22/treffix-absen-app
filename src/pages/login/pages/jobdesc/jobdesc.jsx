@@ -11,7 +11,7 @@ const JobdescPage = () => {
 
     return (
         <Page style={{ background: theme === "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)" }}>
-            <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", textAlign: "center", width: "100%", background: "linear-gradient(1deg,rgba(40, 111, 243, 0) 40%, rgba(40, 111, 243, 0.5) 100%)", color: theme === "light" ? "black" : "white" }}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", textAlign: "center", width: "100%", background: "linear-gradient(1deg,transparent 40%, var(--bg-primary-green) 100%)", color: theme === "light" ? "black" : "white" }}>
                 <div style={{ width: "100%", height: "450px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <img src={JobdescImage} alt="JobdescImage" style={{ width: "65%", height: "450px", objectFit: "contain" }} />
                 </div>
@@ -39,7 +39,7 @@ const JobdescPage = () => {
                     text={"Lihat Kualifikasi & Deskripsi Pekerjaan"}
                 />
             </ButtonFixBottom>
-        </Page>
+        </Page >
     )
 }
 

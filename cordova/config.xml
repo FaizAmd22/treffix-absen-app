@@ -17,7 +17,6 @@
         <preference name="SplashMaintainAspectRatio" value="true" />
         <preference name="AndroidWindowSplashScreenShowOnlyFirstTime" value="false" />
         <preference name="AndroidWindowSplashScreenBackground" value="#1d8b8e" />
-        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splash.png" />
         <preference name="AndroidWindowSplashScreenScaleType" value="FIT_XY" />
         <preference name="AndroidXEnabled" value="true" />
         <config-file parent="/*" target="AndroidManifest.xml">

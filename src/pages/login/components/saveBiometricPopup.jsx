@@ -22,21 +22,13 @@ const SaveBioMetricPopup = ({ popupOpened, setPopupOpened, token }) => {
         }
 
         setPopupOpened(false)
-        f7.views.main.router.navigate('/home/', {
-            reloadCurrent: false,
-            replaceState: true,
-            clearPreviousHistory: true,
-        });
+        f7.views.main.router.navigate('/loading/');
     }
 
     const handleCancel = () => {
         setPopupOpened(false)
         localStorage.setItem('isBiometric', 'false');
-        f7.views.main.router.navigate('/home/', {
-            reloadCurrent: false,
-            replaceState: true,
-            clearPreviousHistory: true,
-        });
+        f7.views.main.router.navigate('/loading/');
     }
 
     return (
