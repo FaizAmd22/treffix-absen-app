@@ -168,7 +168,7 @@ const InputForm = ({ emailNip, setEmailNip, password, setPassword, passwordVisib
 
           <div style={{ display: "flex", justifyContent: "end", alignItems: "center", margin: "10px 0px 25px 0px" }}>
             <a
-              style={{ color: "var(--bg-primary-green)", fontWeight: "700", fontSize: "14px", cursor: "pointer" }}
+              style={{ color: "var(--bg-primary-color)", fontWeight: "700", fontSize: "14px", cursor: "pointer" }}
               onClick={handleForgotPasswordClick}
             >
               {translate('login_forgot_password', language)}
@@ -179,7 +179,7 @@ const InputForm = ({ emailNip, setEmailNip, password, setPassword, passwordVisib
             <p style={{ color: 'red', fontWeight: 'bold', margin: 0 }}>{errorMessage}</p>
           )}
 
-          <Button type="submit" style={{ width: "100%", backgroundColor: "var(--bg-primary-green)", color: "white", fontSize: "14px", fontWeight: "700", padding: "25px 0px", textTransform: "capitalize", borderRadius: "8px", marginTop: "10px", marginBottom: "30px", }}>
+          <Button type="submit" style={{ width: "100%", backgroundColor: "var(--bg-primary-color)", color: "white", fontSize: "14px", fontWeight: "700", padding: "25px 0px", textTransform: "capitalize", borderRadius: "8px", marginTop: "10px", marginBottom: "30px", }}>
             <p>{translate('login', language)}</p>
           </Button>
         </form>
@@ -188,7 +188,7 @@ const InputForm = ({ emailNip, setEmailNip, password, setPassword, passwordVisib
           <div style={{ width: "100%", height: "100%", paddingBottom: "20px", display: "flex", justifyContent: "center", alignItems: "center", }}>
             <div
               onClick={handleBiometricLogin}
-              style={{ display: "flex", flexDirection: "column", color: "var(--bg-primary-green)", textTransform: "capitalize", width: "50%", justifyContent: "center", alignItems: "center", border: "none", background: "none" }}
+              style={{ display: "flex", flexDirection: "column", color: "var(--bg-primary-color)", textTransform: "capitalize", width: "50%", justifyContent: "center", alignItems: "center", border: "none", background: "none" }}
             >
               <LuFingerprint size={"38px"} />
               <p style={{ fontWeight: "700", fontSize: "var(--font-xs)", padding: 0, margin: 0, marginTop: "5px" }}>Biometric Login</p>

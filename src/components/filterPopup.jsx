@@ -55,7 +55,7 @@ const FilterPopup = ({
                                 key={itemIndex}
                                 onClick={() => toggleSelection(itemValue, selectedValues, setSelectedValues)}
                                 style={{
-                                    backgroundColor: selectedValues.includes(itemValue) ? 'var(--bg-primary-green)' : theme === "light" ? '#E9E9E9' : "#212121",
+                                    backgroundColor: selectedValues.includes(itemValue) ? 'var(--bg-primary-color)' : theme === "light" ? '#E9E9E9' : "#212121",
                                     color: selectedValues.includes(itemValue) ? 'white' : theme === "light" ? 'black' : "white",
                                     margin: '5px',
                                     padding: "4px 18px",
@@ -103,7 +103,7 @@ const FilterPopup = ({
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px', marginBottom: "20px", gap: "40px", paddingTop: "10px", fontSize: "var(--font-sm)" }}>
                     <div
                         style={{
-                            border: "1px solid var(--bg-primary-green)",
+                            border: "1px solid var(--bg-primary-color)",
                             background: "none",
                             width: "70%",
                             borderRadius: "8px",
@@ -112,14 +112,14 @@ const FilterPopup = ({
                         }}
                         onClick={closeFilterPopup}
                     >
-                        <p style={{ color: "var(--bg-primary-green)", fontWeight: 700, padding: "11px 0", margin: 0 }}>
+                        <p style={{ color: "var(--bg-primary-color)", fontWeight: 700, padding: "11px 0", margin: 0 }}>
                             {translate('procurement_cancel', language)}
                         </p>
                     </div>
                     <div
                         style={{
-                            border: "1px solid var(--bg-primary-green)",
-                            background: "var(--bg-primary-green)",
+                            border: "1px solid var(--bg-primary-color)",
+                            background: "var(--bg-primary-color)",
                             width: "70%",
                             borderRadius: "8px",
                             textAlign: "center",

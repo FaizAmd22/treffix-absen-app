@@ -64,7 +64,7 @@ const FilterPerformancePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, 
                                     key={index}
                                     onClick={() => toggleSelection(item.status, tempSelectedStatus, setTempSelectedStatus)}
                                     style={{
-                                        backgroundColor: tempSelectedStatus.includes(item.status) ? 'var(--bg-primary-green)' : theme == "light" ? '#E9E9E9' : "#212121",
+                                        backgroundColor: tempSelectedStatus.includes(item.status) ? 'var(--bg-primary-color)' : theme == "light" ? '#E9E9E9' : "#212121",
                                         color: tempSelectedStatus.includes(item.status) ? 'white' : theme == "light" ? 'black' : "white",
                                         margin: '5px',
                                         padding: "4px 18px",
@@ -86,7 +86,7 @@ const FilterPerformancePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, 
                                     key={index}
                                     onClick={() => toggleSelection(item.type, tempSelectedType, setTempSelectedType)}
                                     style={{
-                                        backgroundColor: tempSelectedType.includes(item.type) ? 'var(--bg-primary-green)' : theme == "light" ? '#E9E9E9' : "#212121",
+                                        backgroundColor: tempSelectedType.includes(item.type) ? 'var(--bg-primary-color)' : theme == "light" ? '#E9E9E9' : "#212121",
                                         color: tempSelectedType.includes(item.type) ? 'white' : theme == "light" ? 'black' : "white",
                                         margin: '5px',
                                         padding: "4px 18px",
@@ -105,17 +105,17 @@ const FilterPerformancePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, 
 
                 <ButtonFixBottomPopup>
                     <CustomButton
-                        color={"var(--bg-primary-green)"}
+                        color={"var(--bg-primary-color)"}
                         bg={"transparent"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('procurement_cancel', language)}
                         handleClick={closeFilterPopup}
                     />
 
                     <CustomButton
                         color={"white"}
-                        bg={"var(--bg-primary-green)"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('procurement_apply', language)}
                         handleClick={applyFilter}
                     />

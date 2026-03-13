@@ -132,7 +132,7 @@ const Verifications = ({ title, onVerificationComplete }) => {
                             onChange={(e) => handleChange(e.target.value, index)}
                             onKeyUp={(e) => handleBackspaceAndEnter(e, index)}
                             ref={(reference) => (verifCodeReference.current[index] = reference)}
-                            onFocus={(e) => e.target.style.border = "1px solid var(--bg-primary-green)"}
+                            onFocus={(e) => e.target.style.border = "1px solid var(--bg-primary-color)"}
                             onBlur={(e) => e.target.style.border = "1px solid var(--border-primary-gray)"}
                             style={{
                                 width: "40px",
@@ -162,7 +162,7 @@ const Verifications = ({ title, onVerificationComplete }) => {
                         onClick={handleSubmit}
                         style={{
                             width: "100%",
-                            backgroundColor: "var(--bg-primary-green)",
+                            backgroundColor: "var(--bg-primary-color)",
                             color: "white",
                             fontSize: "var(--font-sm)",
                             fontWeight: "700",

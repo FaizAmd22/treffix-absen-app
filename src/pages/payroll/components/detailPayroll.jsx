@@ -78,7 +78,7 @@ const DetailPayroll = ({ data, index, setIsDetail }) => {
             </div >
 
             <div style={{ width: "100%", height: "80px", borderTop: theme == "light" ? "1px solid var(--border-primary-gray)" : "1px solid #363636", background: theme == "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)", position: "fixed", bottom: "0", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <Button style={{ width: "90%", backgroundColor: "var(--bg-primary-green)", color: "white", fontSize: "14px", fontWeight: "700", padding: "20px 0px", textTransform: "capitalize", borderRadius: "8px", marginBottom: "10px" }}>
+                <Button style={{ width: "90%", backgroundColor: "var(--bg-primary-color)", color: "white", fontSize: "14px", fontWeight: "700", padding: "20px 0px", textTransform: "capitalize", borderRadius: "8px", marginBottom: "10px" }}>
                     <p>Download Slip Gaji</p>
                 </Button>
             </div>

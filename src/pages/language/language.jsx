@@ -64,7 +64,7 @@ const LanguagePage = () => {
             </Block>
 
             <ButtonFixBottom needBorderTop={false}>
-                <CustomButton bg={"var(--bg-primary-green)"} color={"white"} text={translate('save', language)} handleClick={handleSave} />
+                <CustomButton bg={"var(--bg-primary-color)"} color={"white"} text={translate('save', language)} handleClick={handleSave} />
             </ButtonFixBottom>
         </Page>
     )

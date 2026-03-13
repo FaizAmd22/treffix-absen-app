@@ -164,7 +164,7 @@ const HomePage = () => {
 
   return (
     <Page style={{ background: theme === "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)" }} ptr ptrMousewheel={true} onPtrRefresh={onRefresh}>
-      <Block style={{ background: theme === "light" ? "var(--bg-primary-black)" : "linear-gradient(#33a59d, #0f7a84)", margin: 0, padding: 0, marginBottom: "-10px" }}>
+      <Block style={{ background: theme === "light" ? "var(--bg-primary-black)" : "var(--bg-primary-color)", margin: 0, padding: 0, marginBottom: "-10px" }}>
         <img src={TextureBg} alt="TextureBg" style={{ width: "100%", height: "290px", objectFit: "cover", position: "fixed", opacity: "20%" }} />
 
         <HomeProfile />

@@ -36,7 +36,7 @@ const ProcurementDetail = () => {
                     <p style={{ margin: "4px 0" }}>{translate('detail_procurement_item_link', language)}</p>
                     <p
                         onClick={openLinkInBrowser}
-                        style={{ fontWeight: 700, textAlign: "end", margin: "4px 0", overflow: "hidden", textDecoration: "underline", color: "var(--bg-primary-green)" }}
+                        style={{ fontWeight: 700, textAlign: "end", margin: "4px 0", overflow: "hidden", textDecoration: "underline", color: "var(--bg-primary-color)" }}
                     >
                         {data.url.length >= 27 ? data.url.slice(0, 15) + "..." : data.url}
                     </p>

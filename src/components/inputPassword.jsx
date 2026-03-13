@@ -67,7 +67,7 @@ const InputPassword = ({ title, isVisible, id, value, placeholder, onChange, onC
                     }}
                     tooltip={isVisible ? "Hide Password" : "Show Password"}
                 >
-                    {isVisible ? <HiOutlineEyeOff color="var(--bg-primary-green)" /> : <HiOutlineEye color="var(--bg-primary-green)" />}
+                    {isVisible ? <HiOutlineEyeOff color="var(--bg-primary-color)" /> : <HiOutlineEye color="var(--bg-primary-color)" />}
                 </Button>
             </div>
 

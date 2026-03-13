@@ -209,7 +209,7 @@ const UpdateSchedule = () => {
                         onChange={handleInputChange(setAddress)}
                         title={translate('add_schedule_address', language)}
                         placeholder={translate('add_schedule_address_text', language)}
-                        icon={<LuMapPin size={"17px"} style={{ color: "var(--bg-primary-green)" }} />}
+                        icon={<LuMapPin size={"17px"} style={{ color: "var(--bg-primary-color)" }} />}
                         theme={theme}
                     />
 
@@ -237,7 +237,7 @@ const UpdateSchedule = () => {
                 ) : (
                     <CustomButton
                         color={"white"}
-                        bg={isButtonEnabled ? "var(--bg-primary-green)" : "var(--color-gray)"}
+                        bg={isButtonEnabled ? "var(--bg-primary-color)" : "var(--color-gray)"}
                         text={translate('update_schedule', language)}
                         disable={!isButtonEnabled}
                         handleClick={handleSubmit}

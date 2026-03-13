@@ -111,7 +111,7 @@ const PerformanceDetailPage = (props) => {
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <BackButton label={`${translate('performance_point_activity', language)} ${months[month]} ${year}`} />
                     <Button onClick={openFilterPopup}>
-                        <HiOutlineAdjustmentsHorizontal size={"20px"} color="var(--bg-primary-green)" />
+                        <HiOutlineAdjustmentsHorizontal size={"20px"} color="var(--bg-primary-color)" />
                     </Button>
                 </div>
 

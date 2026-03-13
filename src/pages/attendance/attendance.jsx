@@ -338,14 +338,14 @@ const AttendancePage = () => {
                 <BackButton label={translate('home_attendance', language)} />
 
                 <div style={{ display: "flex", textAlign: "center", marginBottom: "10px", fontSize: "var(--font-sm)", }}>
-                    <Button onClick={handlePrev} disabled={currentMonthIndex === 0} style={{ background: 'none', color: "var(--bg-primary-green)" }}>
-                        <IoChevronBackOutline size={20} color='var(--bg-primary-green)' style={{ opacity: currentMonthIndex === 0 ? 0.4 : 1 }} />
+                    <Button onClick={handlePrev} disabled={currentMonthIndex === 0} style={{ background: 'none', color: "var(--bg-primary-color)" }}>
+                        <IoChevronBackOutline size={20} color='var(--bg-primary-color)' style={{ opacity: currentMonthIndex === 0 ? 0.4 : 1 }} />
                     </Button>
                     <p style={{ margin: "5px 10px", width: "100%", color: theme === "light" ? "black" : "white" }}>
                         {currentMonth.label}
                     </p>
-                    <Button onClick={handleNext} disabled={currentMonthIndex === months.length - 1} style={{ background: 'none', color: "var(--bg-primary-green)" }}>
-                        <IoChevronForwardOutline size={20} color='var(--bg-primary-green)' style={{ opacity: currentMonthIndex === months.length - 1 ? 0.4 : 1 }} />
+                    <Button onClick={handleNext} disabled={currentMonthIndex === months.length - 1} style={{ background: 'none', color: "var(--bg-primary-color)" }}>
+                        <IoChevronForwardOutline size={20} color='var(--bg-primary-color)' style={{ opacity: currentMonthIndex === months.length - 1 ? 0.4 : 1 }} />
                     </Button>
                 </div>
 

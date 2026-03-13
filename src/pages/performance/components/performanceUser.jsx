@@ -46,7 +46,7 @@ const PerformanceUser = ({ data }) => {
                     <img src={user.profile_pic ? user.profile_pic : UserPic} alt="ProfileImage" style={{ width: "140px", height: "140px", objectFit: "cover", borderRadius: "50%", position: "relative", zIndex: 99, border: "5px solid white" }} />
 
                     <div style={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center", marginTop: "-40px", zIndex: 999 }}>
-                        <p style={{ color: "white", borderRadius: "4px", padding: "10px 25px", background: "var(--bg-primary-green)", fontWeight: 700, fontSize: "var(--font-sm)" }}>{gradeData.level}</p>
+                        <p style={{ color: "white", borderRadius: "4px", padding: "10px 25px", background: "var(--bg-primary-color)", fontWeight: 700, fontSize: "var(--font-sm)" }}>{gradeData.level}</p>
                     </div>
 
                     <div style={{ background: theme == "light" ? "rgba(217, 218, 220, 0.4)" : "#212121", paddingTop: "80px", paddingBottom: "20px", marginTop: "-85px", borderRadius: "12px", width: "100%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>

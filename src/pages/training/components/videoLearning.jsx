@@ -594,7 +594,7 @@ const VideoLearning = () => {
                 <ButtonFixBottom needBorderTop={true}>
                     <CustomButton
                         color={!isVideoFinished ? "var(--color-gray)" : "white"}
-                        bg={isVideoFinished ? "var(--bg-primary-green)" : (theme === "light" ? "rgba(217, 218, 220, 1)" : "rgba(32, 32, 32, 1)")}
+                        bg={isVideoFinished ? "var(--bg-primary-color)" : (theme === "light" ? "rgba(217, 218, 220, 1)" : "rgba(32, 32, 32, 1)")}
                         text={translate('done', language)}
                         handleClick={handleLogoutClick}
                         disable={!isVideoFinished}

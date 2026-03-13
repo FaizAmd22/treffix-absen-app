@@ -41,17 +41,17 @@ const QuestionPopup = ({ popupOpened, setPopupOpened, theme, nextTest, handleCon
 
                 <ButtonFixBottomPopup>
                     <CustomButton
-                        color={"var(--bg-primary-green)"}
+                        color={"var(--bg-primary-color)"}
                         bg={"transparent"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('question_recheck', language)}
                         handleClick={() => setPopupOpened(false)}
                     />
 
                     <CustomButton
                         color={"white"}
-                        bg={"var(--bg-primary-green)"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={nextTest == "video_learning" ? translate('continue', language) : translate('question_finished', language)}
                         handleClick={handleConfirm}
                     />

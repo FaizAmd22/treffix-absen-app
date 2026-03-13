@@ -651,10 +651,10 @@ const ValidasiKtp = () => {
         <ButtonFixBottom needBorderTop={true}>
           <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "20px" }}>
             <CustomButton
-              color={"var(--bg-primary-green)"}
+              color={"var(--bg-primary-color)"}
               bg={"transparent"}
               text={"Ambil Foto Ulang"}
-              border={"1px solid var(--bg-primary-green)"}
+              border={"1px solid var(--bg-primary-color)"}
               handleClick={() => {
                 const params = `?value=${encodeURIComponent(query.value)}&label=${encodeURIComponent(query.label)}`;
                 f7.views.main.router.navigate(`/capture-ktp/${params}`);
@@ -663,7 +663,7 @@ const ValidasiKtp = () => {
 
             <CustomButton
               color={"white"}
-              bg={"var(--bg-primary-green)"}
+              bg={"var(--bg-primary-color)"}
               text={"Selesai"}
               // disable={!isButtonEnabled}
               handleClick={handleSubmit}

@@ -220,7 +220,7 @@ const OvertimeSubmission = () => {
                     ) : (
                         <CustomButton
                             color={"white"}
-                            bg={(!isButtonEnabled || isLoadingSubmit) ? "var(--color-gray)" : "var(--bg-primary-green)"}
+                            bg={(!isButtonEnabled || isLoadingSubmit) ? "var(--color-gray)" : "var(--bg-primary-color)"}
                             text={isLoadingSubmit ? "Loading..." : translate('overtime_request_create', language)}
                             disable={!isButtonEnabled || isLoadingSubmit}
                             handleClick={handleConfirmSubmit}

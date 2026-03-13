@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Page, Navbar, Block, Button, f7, Link, Popup } from 'framework7-react';
+import { Page, f7, Link } from 'framework7-react';
 import { Html5Qrcode } from 'html5-qrcode';
 import { useDispatch, useSelector } from 'react-redux';
 import { API } from '../../../api/axios';

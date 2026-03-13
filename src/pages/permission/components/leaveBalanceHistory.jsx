@@ -222,7 +222,7 @@ const LeaveBalanceHistory = () => {
                                             <div style={{ display: "flex", justifyContent: "space-between" }}>
                                                 <div onClick={() => setPopupOpened(true)} style={{ display: "flex", gap: "8px", alignItems: "center" }}>
                                                     <p style={{ margin: "5px 0" }}>{translate('sabbatical_leave_balance', language)}</p>
-                                                    <BiInfoCircle size={18} style={{ color: "var(--bg-primary-green)" }} />
+                                                    <BiInfoCircle size={18} style={{ color: "var(--bg-primary-color)" }} />
                                                 </div>
                                                 <p style={{ fontWeight: 700, margin: "5px 0" }}>{stats.cutiBesar}</p>
                                             </div>

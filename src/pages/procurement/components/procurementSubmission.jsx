@@ -171,7 +171,7 @@ const ProcurementSubmission = () => {
                     ) : (
                         <CustomButton
                             color={"white"}
-                            bg={isButtonEnabled ? "var(--bg-primary-green)" : "var(--color-gray)"}
+                            bg={isButtonEnabled ? "var(--bg-primary-color)" : "var(--color-gray)"}
                             text={translate('submit', language)}
                             disable={!isButtonEnabled}
                             handleClick={handleSubmit}

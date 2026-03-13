@@ -10,7 +10,7 @@ const RegisterFace = () => {
 
     return (
         <Page style={{ background: theme === "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)" }}>
-            <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", textAlign: "center", width: "100%", background: "linear-gradient(1deg,transparent 40%, var(--bg-primary-green) 100%)", color: theme === "light" ? "black" : "white" }}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", textAlign: "center", width: "100%", background: "linear-gradient(1deg,transparent 40%, var(--bg-primary-color) 100%)", color: theme === "light" ? "black" : "white" }}>
                 <div style={{ width: "100%", height: "450px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <img src={Image} alt="camera" style={{ width: "65%", height: "450px", objectFit: "contain" }} />
                 </div>
@@ -22,7 +22,7 @@ const RegisterFace = () => {
 
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "end", alignItems: "center", position: "absolute", bottom: "11%", width: "100%" }}>
                     <div style={{ display: "flex", gap: "5px", justifyContent: "center", alignItems: "center", marginBottom: "15px" }}>
-                        <div style={{ background: "var(--bg-primary-green)", width: "72px", height: "8px", borderRadius: "20px" }} />
+                        <div style={{ background: "var(--bg-primary-color)", width: "72px", height: "8px", borderRadius: "20px" }} />
                         <div style={{ background: "#F0F0F0", width: "8px", height: "8px", borderRadius: "100%" }} />
                         <div style={{ background: "#F0F0F0", width: "8px", height: "8px", borderRadius: "100%" }} />
                         <div style={{ background: "#F0F0F0", width: "8px", height: "8px", borderRadius: "100%" }} />
@@ -35,7 +35,7 @@ const RegisterFace = () => {
                     handleClick={() => { f7.views.main.router.navigate('/capture-face/register/') }}
                     // handleClick={() => { f7.views.main.router.navigate('/jobdesc/') }}
                     color={"white"}
-                    bg={"var(--bg-primary-green)"}
+                    bg={"var(--bg-primary-color)"}
                     text={"Mulai Foto"}
                 />
             </ButtonFixBottom>

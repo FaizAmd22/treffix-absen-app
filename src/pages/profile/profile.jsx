@@ -175,10 +175,10 @@ const ProfilePage = () => {
                                             <div style={{ width: "28px", height: "28px", ObjectFit: "cover", position: "absolute", zIndex: "-1", opacity: theme === "light" ? 1 : 0.1 }} >
                                                 <BgIcon fillColor="var(--bg-icon)" width={28} height={28} />
                                             </div>
-                                            <Icons fillColor="var(--bg-primary-green)" width={28} height={28} />
+                                            <Icons fillColor="var(--bg-primary-color)" width={28} height={28} />
                                             <p style={{ color: theme === "light" ? "black" : "white", fontSize: "var(--font-sm)" }}>{item.label}</p>
                                         </div>
-                                        <MdNavigateNext size={"18px"} color="var(--bg-primary-green)" />
+                                        <MdNavigateNext size={"18px"} color="var(--bg-primary-color)" />
                                     </Link>
                                 )
                             })
@@ -197,13 +197,13 @@ const ProfilePage = () => {
                                             <div style={{ width: "28px", height: "28px", ObjectFit: "cover", position: "absolute", zIndex: "-1", opacity: theme === "light" ? 1 : 0.1 }} >
                                                 <BgIcon fillColor="var(--bg-icon)" width={28} height={28} />
                                             </div>
-                                            <Icons fillColor="var(--bg-primary-green)" width={28} height={28} />
+                                            <Icons fillColor="var(--bg-primary-color)" width={28} height={28} />
                                             <p style={{ color: theme === "light" ? "black" : "white", fontSize: "var(--font-sm)" }}>{item.label}</p>
                                             {/*{item.coming_soon && (
                                             <p style={{ color: "var(--color-dark-gray)", fontSize: "var(--font-sm)" }}>(Coming Soon)</p>
                                         )}*/}
                                         </div>
-                                        <MdNavigateNext size={"18px"} color="var(--bg-primary-green)" />
+                                        <MdNavigateNext size={"18px"} color="var(--bg-primary-color)" />
                                     </Link>
                                 )
                             })
@@ -223,10 +223,10 @@ const ProfilePage = () => {
                                             <div style={{ width: "28px", height: "28px", ObjectFit: "cover", position: "absolute", zIndex: "-1", opacity: theme === "light" ? 1 : 0.1 }} >
                                                 <BgIcon fillColor="var(--bg-icon)" width={28} height={28} />
                                             </div>
-                                            <Icons fillColor="var(--bg-primary-green)" width={28} height={28} />
+                                            <Icons fillColor="var(--bg-primary-color)" width={28} height={28} />
                                             <p style={{ color: theme === "light" ? "black" : "white", fontSize: "var(--font-sm)" }}>{item.label}</p>
                                         </div>
-                                        <MdNavigateNext size={"18px"} color="var(--bg-primary-green)" />
+                                        <MdNavigateNext size={"18px"} color="var(--bg-primary-color)" />
                                     </Link>
                                 )
                             })
@@ -239,10 +239,10 @@ const ProfilePage = () => {
                         <div style={{ width: "28px", height: "28px", ObjectFit: "cover", position: "absolute", zIndex: "-1", opacity: theme === "light" ? 1 : 0.1 }} >
                             <BgIcon fillColor="var(--bg-icon)" width={28} height={28} />
                         </div>
-                        <LogoutIcon fillColor="var(--bg-primary-green)" width={28} height={28} />
+                        <LogoutIcon fillColor="var(--bg-primary-color)" width={28} height={28} />
                         <p style={{ color: theme === "light" ? "black" : "white", fontSize: "var(--font-sm)" }}>{translate('logout', language)}</p>
                     </div>
-                    <MdNavigateNext size={"18px"} color="var(--bg-primary-green)" />
+                    <MdNavigateNext size={"18px"} color="var(--bg-primary-color)" />
                 </Link>
 
                 <CustomPopup

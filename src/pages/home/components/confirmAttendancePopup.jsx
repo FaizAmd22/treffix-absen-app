@@ -45,17 +45,17 @@ const ConfirmAttendancePopup = ({ popupOpened, setPopupOpened }) => {
 
                 <ButtonFixBottomPopup>
                     <CustomButton
-                        color={"var(--bg-primary-green)"}
+                        color={"var(--bg-primary-color)"}
                         bg={"transparent"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('procurement_cancel', language)}
                         handleClick={handleCancel}
                     />
 
                     <CustomButton
                         color={"white"}
-                        bg={"var(--bg-primary-green)"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('continue_attendance', language)}
                         handleClick={handleSubmit}
                     />

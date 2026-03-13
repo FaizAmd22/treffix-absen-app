@@ -29,13 +29,13 @@ const MessageAlert = ({ sheetOpened, setSheetOpened, title, message, imageAlert,
                             <Link
                                 style={{
                                     width: "100%",
-                                    backgroundColor: "var(--bg-primary-green)",
+                                    backgroundColor: "var(--bg-primary-color)",
                                     color: "white",
                                     fontSize: "16px",
                                     fontWeight: "700",
                                     textTransform: "capitalize",
                                     borderRadius: "8px",
-                                    border: "1px solid var(--bg-primary-green)"
+                                    border: "1px solid var(--bg-primary-color)"
                                 }}
                                 sheetClose
                                 onClick={handleClick}
@@ -47,12 +47,12 @@ const MessageAlert = ({ sheetOpened, setSheetOpened, title, message, imageAlert,
                                 style={{
                                     width: "100%",
                                     backgroundColor: "transparent",
-                                    color: "var(--bg-primary-green)",
+                                    color: "var(--bg-primary-color)",
                                     fontSize: "16px",
                                     fontWeight: "700",
                                     textTransform: "capitalize",
                                     borderRadius: "8px",
-                                    border: "1px solid var(--bg-primary-green)"
+                                    border: "1px solid var(--bg-primary-color)"
                                 }}
                                 sheetClose
                                 onClick={handleSubmit}
@@ -64,13 +64,13 @@ const MessageAlert = ({ sheetOpened, setSheetOpened, title, message, imageAlert,
                         <Link
                             style={{
                                 width: "100%",
-                                backgroundColor: "var(--bg-primary-green)",
+                                backgroundColor: "var(--bg-primary-color)",
                                 color: "white",
                                 fontSize: "16px",
                                 fontWeight: "700",
                                 textTransform: "capitalize",
                                 borderRadius: "8px",
-                                border: "1px solid var(--bg-primary-green)"
+                                border: "1px solid var(--bg-primary-color)"
                             }}
                             sheetClose
                             onClick={handleClick ? handleClick : () => { }}

@@ -67,7 +67,7 @@ const VisitPage = () => {
             </div>
 
             <div style={{ width: "100%", height: "80px", borderTop: theme == "light" ? "1px solid var(--border-primary-gray)" : "1px solid #363636", background: theme == "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)", position: "fixed", bottom: "0", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <Button type="link" disabled={visitIn != null && visitOut != null} href="/visit-submission/" style={{ width: "90%", backgroundColor: visitIn == null ? "var(--bg-primary-green)" : visitOut == null ? "var(--color-red)" : "var(--color-dark-gray)", color: "white", fontSize: "var(--font-sm)", fontWeight: "700", padding: "25px 0px", textTransform: "capitalize", borderRadius: "8px", marginBottom: "10px" }}>
+                <Button type="link" disabled={visitIn != null && visitOut != null} href="/visit-submission/" style={{ width: "90%", backgroundColor: visitIn == null ? "var(--bg-primary-color)" : visitOut == null ? "var(--color-red)" : "var(--color-dark-gray)", color: "white", fontSize: "var(--font-sm)", fontWeight: "700", padding: "25px 0px", textTransform: "capitalize", borderRadius: "8px", marginBottom: "10px" }}>
                     <p>{visitIn == null ? translate('visit_in', language) : visitOut == null ? translate('visit_out', language) : translate('home_rest_button', language)}</p>
                 </Button>
             </div>

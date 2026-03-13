@@ -103,7 +103,7 @@
     "attendance_submission_failed": "Absen gagal",
 
 
-    "login_welcome": "Selamat Datang di Ngabsen",
+    "login_welcome": "Selamat Datang di Fixwork",
     "login_wrong_email": "Email/NIP atau password belum sesuai. Silakan periksa kembali.",
     "alert_biometric_not_available": "Login biometrik tidak tersedia pada perangkat ini",
     "alert_biometric_not_saved": "Tidak ditemukan biometrik yang tersimpan. Silakan masuk dengan email/Password terlebih dahulu",
@@ -123,7 +123,7 @@
     "forgot_password_wrong_code": "Kode Verifikasi Salah!",
     "forgot_password_back_in": "Kembali Masuk",
     "forgot_password_title": "Lupa Password",
-    "forgot_password_enter_email_label": "Masukkan email Anda yang terdaftar di Ngabsen, lalu periksa email Anda untuk mendapatkan kode verifikasi",
+    "forgot_password_enter_email_label": "Masukkan email Anda yang terdaftar di Fixwork, lalu periksa email Anda untuk mendapatkan kode verifikasi",
     "forgot_password_input_email": "Masukkan email Anda ...",
     "forgot_password_send_code": "Kirim Kode Verifikasi",
 

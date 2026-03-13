@@ -103,7 +103,7 @@
     "attendance_submission_failed": "Attendance failed",
 
 
-    "login_welcome": "Welcome to Ngabsen",
+    "login_welcome": "Welcome to Fixwork",
     "login_wrong_email": "Incorrect Email/NIP or password. Please check again.",
     "alert_biometric_not_available": "Biometric login is not available on this device",
     "alert_biometric_not_saved": "No stored biometric found. Please login with email/password first",
@@ -123,7 +123,7 @@
     "forgot_password_wrong_code": "Incorrect Verification Code!",
     "forgot_password_back_in": "Back In",
     "forgot_password_title": "Forgot Password",
-    "forgot_password_enter_email_label": "Enter your email registered with Ngabsen, then check your email for a verification code.",
+    "forgot_password_enter_email_label": "Enter your email registered with Fixwork, then check your email for a verification code.",
     "forgot_password_input_email": "Enter your email ...",
     "forgot_password_send_code": "Send Verification Code",
 

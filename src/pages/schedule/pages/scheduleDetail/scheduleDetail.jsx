@@ -198,7 +198,7 @@ const ScheduleDetail = () => {
                                     slot="fixed"
                                     onClick={handleAddSchedule}
                                 >
-                                    <div style={{ width: "100%", height: "100%", background: "var(--bg-primary-green)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <div style={{ width: "100%", height: "100%", background: "var(--bg-primary-color)", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                         <AddScheduleIcon fillColor='white' width={32} height={32} />
                                     </div>
                                 </Fab>
@@ -209,7 +209,7 @@ const ScheduleDetail = () => {
 
                                 <CustomButton
                                     color={"white"}
-                                    bg={"var(--bg-primary-green)"}
+                                    bg={"var(--bg-primary-color)"}
                                     text={translate('create_schedule_now', language)}
                                     handleClick={handleAddSchedule}
                                 />

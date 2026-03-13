@@ -464,16 +464,16 @@ const PermissionPage = () => {
         <Page style={{ background: theme === "light" ? "var(--bg-primary-white)" : "var(--bg-secondary-black)" }} onPageBeforeIn={onPageBeforeIn} ptr ptrMousewheel={true} onPtrRefresh={onRefresh}>
             <div ref={listRef} style={{ padding: "15px", marginBottom: "90px", color: theme === "light" ? "black" : "white" }}>
                 <Link href="/leave-history/" style={{ width: "24px", height: "24px", position: "absolute", top: 36, right: 20 }}>
-                    <ReimburseIcon fillColor="var(--bg-primary-green)" width={28} height={28} />
+                    <ReimburseIcon fillColor="var(--bg-primary-color)" width={28} height={28} />
                 </Link>
 
                 <BackButton label={translate('home_permission', language)} />
 
                 <div onClick={openFilterPopup} style={{ display: "flex", gap: "10px", alignItems: "center", border: theme == "light" ? "1px solid var(--border-primary-gray)" : "1px solid #363636", padding: "10px", borderRadius: "8px", marginTop: "20px" }}>
-                    <HiOutlineAdjustmentsHorizontal size={"24px"} style={{ color: "var(--bg-primary-green)" }} />
+                    <HiOutlineAdjustmentsHorizontal size={"24px"} style={{ color: "var(--bg-primary-color)" }} />
                     <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         <p style={{ margin: 0, fontSize: "var(--font-md)" }}>Filter</p>
-                        <FaChevronRight style={{ fontSize: "13px", opacity: 0.7, color: "var(--bg-primary-green)" }} />
+                        <FaChevronRight style={{ fontSize: "13px", opacity: 0.7, color: "var(--bg-primary-color)" }} />
                     </div>
                 </div>
 
@@ -589,7 +589,7 @@ const PermissionPage = () => {
             <ButtonFixBottom needBorderTop={true}>
                 <CustomButton
                     color={"white"}
-                    bg={"var(--bg-primary-green)"}
+                    bg={"var(--bg-primary-color)"}
                     text={translate('apply_permission', language)}
                     handleClick={() => f7.views.main.router.navigate('/permission-submission/')}
                 // disable

@@ -140,13 +140,13 @@ const NotificationsPage = () => {
 
     const filterImage = (type) => {
         if (type == "leave" || type == "permission") {
-            return <PermissionIcon fillColor="var(--bg-primary-green)" width="60%" height="60%" />
+            return <PermissionIcon fillColor="var(--bg-primary-color)" width="60%" height="60%" />
         } else if (type == "reimbursement") {
-            return <ReimburseIcon fillColor="var(--bg-primary-green)" width="60%" height="60%" />
+            return <ReimburseIcon fillColor="var(--bg-primary-color)" width="60%" height="60%" />
         } else if (type == "procurement") {
-            return <ProcurementIcon fillColor="var(--bg-primary-green)" width="60%" height="60%" />
+            return <ProcurementIcon fillColor="var(--bg-primary-color)" width="60%" height="60%" />
         } else {
-            return <OvertimeIcon fillColor="var(--bg-primary-green)" width="60%" height="60%" />
+            return <OvertimeIcon fillColor="var(--bg-primary-color)" width="60%" height="60%" />
         }
     }
 
@@ -189,15 +189,15 @@ const NotificationsPage = () => {
                         onClick={() => handleTabChange("tab-1")}
                         style={{
                             flex: 1,
-                            border: (activeTabNotif === "tab-1" && theme === "light") ? "1px solid white" : (activeTabNotif === "tab-1" && theme !== "light") ? "1px solid var(--bg-primary-green)" : "none",
+                            border: (activeTabNotif === "tab-1" && theme === "light") ? "1px solid white" : (activeTabNotif === "tab-1" && theme !== "light") ? "1px solid var(--bg-primary-color)" : "none",
                             padding: "0px 15px",
                             textTransform: "capitalize",
                             borderRadius: "6px",
                             cursor: "pointer",
                             transition: "all 0.3s ease",
                             fontWeight: 700,
-                            background: (activeTabNotif === "tab-1" && theme === "light") ? "white" : (activeTabNotif === "tab-1" && theme !== "light") ? "var(--bg-primary-green-transparent)" : "transparent",
-                            color: activeTabNotif === "tab-1" ? "var(--bg-primary-green)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
+                            background: (activeTabNotif === "tab-1" && theme === "light") ? "white" : (activeTabNotif === "tab-1" && theme !== "light") ? "var(--bg-primary-color-transparent)" : "transparent",
+                            color: activeTabNotif === "tab-1" ? "var(--bg-primary-color)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
                         }}
                     >
                         General {unreadData.length > 0 ? `(${unreadData.length})` : unreadData.length >= 100 ? "(99+)" : null}
@@ -207,15 +207,15 @@ const NotificationsPage = () => {
                         onClick={() => handleTabChange("tab-2")}
                         style={{
                             flex: 1,
-                            border: (activeTabNotif === "tab-2" && theme === "light") ? "1px solid white" : (activeTabNotif === "tab-2" && theme !== "light") ? "1px solid var(--bg-primary-green)" : "none",
+                            border: (activeTabNotif === "tab-2" && theme === "light") ? "1px solid white" : (activeTabNotif === "tab-2" && theme !== "light") ? "1px solid var(--bg-primary-color)" : "none",
                             padding: "0px 15px",
                             textTransform: "capitalize",
                             borderRadius: "6px",
                             cursor: "pointer",
                             transition: "all 0.3s ease",
                             fontWeight: 700,
-                            background: (activeTabNotif === "tab-2" && theme === "light") ? "white" : (activeTabNotif === "tab-2" && theme !== "light") ? "var(--bg-primary-green-transparent)" : "transparent",
-                            color: activeTabNotif === "tab-2" ? "var(--bg-primary-green)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
+                            background: (activeTabNotif === "tab-2" && theme === "light") ? "white" : (activeTabNotif === "tab-2" && theme !== "light") ? "var(--bg-primary-color-transparent)" : "transparent",
+                            color: activeTabNotif === "tab-2" ? "var(--bg-primary-color)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
                         }}
                     >
                         Request {unreadDataRequest.length > 0 ? `(${unreadDataRequest.length})` : unreadDataRequest.length >= 100 ? "(99+)" : null}
@@ -226,15 +226,15 @@ const NotificationsPage = () => {
                             onClick={() => handleTabChange("tab-3")}
                             style={{
                                 flex: 1,
-                                border: (activeTabNotif === "tab-3" && theme === "light") ? "1px solid white" : (activeTabNotif === "tab-3" && theme !== "light") ? "1px solid var(--bg-primary-green)" : "none",
+                                border: (activeTabNotif === "tab-3" && theme === "light") ? "1px solid white" : (activeTabNotif === "tab-3" && theme !== "light") ? "1px solid var(--bg-primary-color)" : "none",
                                 padding: "0px 15px",
                                 textTransform: "capitalize",
                                 borderRadius: "6px",
                                 cursor: "pointer",
                                 transition: "all 0.3s ease",
                                 fontWeight: 700,
-                                background: (activeTabNotif === "tab-3" && theme === "light") ? "white" : (activeTabNotif === "tab-3" && theme !== "light") ? "var(--bg-primary-green-transparent)" : "transparent",
-                                color: activeTabNotif === "tab-3" ? "var(--bg-primary-green)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
+                                background: (activeTabNotif === "tab-3" && theme === "light") ? "white" : (activeTabNotif === "tab-3" && theme !== "light") ? "var(--bg-primary-color-transparent)" : "transparent",
+                                color: activeTabNotif === "tab-3" ? "var(--bg-primary-color)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
                             }}
                         >
                             Approval {unreadDataRequestApprove.length > 0 ? `(${unreadDataRequestApprove.length})` : unreadDataRequestApprove.length >= 100 ? "(99+)" : null}
@@ -267,7 +267,7 @@ const NotificationsPage = () => {
                                                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                                             <p style={{ fontSize: "var(--font-xs)", fontWeight: 400, margin: 0, marginBottom: "10px", color: theme == "light" ? "var(--color-dark-gray)" : "var(--color-gray)" }}>{getRelativeTime(latestDate, language)}</p>
 
-                                                            <div style={{ background: "var(--bg-primary-green)", width: "10px", height: "10px", borderRadius: "50%" }} />
+                                                            <div style={{ background: "var(--bg-primary-color)", width: "10px", height: "10px", borderRadius: "50%" }} />
                                                         </div>
                                                         <p style={{ fontSize: "var(--font-md)", fontWeight: 700, margin: 0, marginBottom: "5px" }}>{item?.title}</p>
                                                         <p style={{ fontSize: "var(--font-sm)", margin: 0 }}>{truncateText(item?.text)}</p>
@@ -345,13 +345,13 @@ const NotificationsPage = () => {
                                                                     {labelFilter(item.status, language)}
                                                                 </p>
 
-                                                                <div style={{ background: "var(--bg-primary-green)", width: "10px", height: "10px", borderRadius: "50%" }} />
+                                                                <div style={{ background: "var(--bg-primary-color)", width: "10px", height: "10px", borderRadius: "50%" }} />
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px" }}>
-                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                        <div style={{ background: "var(--bg-primary-color-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                                             {/* <img src={filterImage(item.attachments.data.type)} alt="OffIcon" style={{ width: "60%", height: "60%", objectFit: "cover" }} /> */}
                                                             {filterImage(item.attachments.data.type)}
                                                         </div>
@@ -402,7 +402,7 @@ const NotificationsPage = () => {
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px" }}>
-                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                        <div style={{ background: "var(--bg-primary-color-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                                             {filterImage(item.attachments.data.type)}
                                                         </div>
 
@@ -461,13 +461,13 @@ const NotificationsPage = () => {
                                                                     {labelFilter(item.status, language)}
                                                                 </p>
 
-                                                                <div style={{ background: "var(--bg-primary-green)", width: "10px", height: "10px", borderRadius: "50%" }} />
+                                                                <div style={{ background: "var(--bg-primary-color)", width: "10px", height: "10px", borderRadius: "50%" }} />
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px", paddingBottom: 0 }}>
-                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                        <div style={{ background: "var(--bg-primary-color-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                                             {filterImage(item.attachments.data.type)}
                                                         </div>
 
@@ -519,7 +519,7 @@ const NotificationsPage = () => {
                                                     </div>
 
                                                     <div style={{ display: "grid", gridTemplateColumns: "15% 80%", alignItems: "center", gap: "10px", padding: "15px", paddingBottom: 0 }}>
-                                                        <div style={{ background: "var(--bg-primary-green-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                                        <div style={{ background: "var(--bg-primary-color-transparent)", width: "45px", height: "45px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                                             {filterImage(item.attachments.data.type)}
                                                         </div>
 

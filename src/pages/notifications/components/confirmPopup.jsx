@@ -31,9 +31,9 @@ const ConfirmPopup = ({ popupOpened, setPopupOpened, handleConfirm, name, id }) 
 
                 <ButtonFixBottomPopup>
                     <CustomButton
-                        color={"var(--bg-primary-green)"}
+                        color={"var(--bg-primary-color)"}
                         bg={"transparent"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('procurement_cancel', language)}
                         handleClick={() => setPopupOpened(false)}
                     />

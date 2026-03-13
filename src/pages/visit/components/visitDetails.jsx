@@ -46,7 +46,7 @@ const VisitDetails = () => {
                     <p style={{ fontWeight: 700, textAlign: "end", margin: "10px 0" }}>Alfa Tower</p>
 
                     <p style={{ margin: "10px 0" }}>{translate('visit_pin_point_address', language)}</p>
-                    <p onClick={() => f7.views.main.router.navigate('/visit-map/')} style={{ fontWeight: 700, textAlign: "end", margin: "10px 0", color: "var(--bg-primary-green)" }}>{translate('visit_view_pin_point_address', language)}</p>
+                    <p onClick={() => f7.views.main.router.navigate('/visit-map/')} style={{ fontWeight: 700, textAlign: "end", margin: "10px 0", color: "var(--bg-primary-color)" }}>{translate('visit_view_pin_point_address', language)}</p>
                 </div>
 
                 <p style={{ fontWeight: 700, margin: 0, marginTop: "20px" }}>{translate('visit_in_proof', language)}</p>

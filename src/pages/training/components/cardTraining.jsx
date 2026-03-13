@@ -49,15 +49,15 @@ const CardTraining = ({ data }) => {
 
                     <div style={{ width: "100%", overflowX: "auto", marginTop: "10px" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: "100vw" }}>
-                            <div style={{ background: "var(--bg-primary-green)", borderRadius: "360px", }}>
+                            <div style={{ background: "var(--bg-primary-color)", borderRadius: "360px", }}>
                                 <p style={{ fontWeight: 700, fontSize: "var(--font-xs)", color: "white", padding: "5px 15px", margin: 0 }}>{labelFilter(data.mandatory, language)}</p>
                             </div>
 
-                            <div style={{ background: "var(--bg-primary-green)", borderRadius: "360px", }}>
+                            <div style={{ background: "var(--bg-primary-color)", borderRadius: "360px", }}>
                                 <p style={{ fontWeight: 700, fontSize: "var(--font-xs)", color: "white", padding: "5px 15px", margin: 0, textTransform: "capitalize" }}>{data.method}</p>
                             </div>
 
-                            <div style={{ background: "var(--bg-primary-green)", borderRadius: "360px", }}>
+                            <div style={{ background: "var(--bg-primary-color)", borderRadius: "360px", }}>
                                 <p style={{ fontWeight: 700, fontSize: "var(--font-xs)", color: "white", padding: "5px 15px", margin: 0 }}>{labelFilter(data.training_format, language)}</p>
                             </div>
                         </div>

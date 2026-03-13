@@ -455,7 +455,7 @@ const ReimbursePage = () => {
             <ButtonFixBottom needBorderTop={true}>
                 <CustomButton
                     color={"white"}
-                    bg={"var(--bg-primary-green)"}
+                    bg={"var(--bg-primary-color)"}
                     text={translate('reimburse_submit', language)}
                     handleClick={() => f7.views.main.router.navigate('/reimburse-submission/')}
                 />

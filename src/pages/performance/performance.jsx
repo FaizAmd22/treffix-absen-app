@@ -218,13 +218,13 @@ const PerformancePage = () => {
 
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "20px", margin: "20px 0" }}>
                     <Button onClick={handlePrevMonth} disabled={!isPrevMonthAvailable()}>
-                        <GoChevronLeft size={24} style={{ color: !isPrevMonthAvailable() ? "var(--color-dark-gray)" : "var(--bg-primary-green)", cursor: !isPrevMonthAvailable() ? "not-allowed" : "pointer" }} />
+                        <GoChevronLeft size={24} style={{ color: !isPrevMonthAvailable() ? "var(--color-dark-gray)" : "var(--bg-primary-color)", cursor: !isPrevMonthAvailable() ? "not-allowed" : "pointer" }} />
                     </Button>
 
                     <p style={{ fontSize: "var(--font-md)", fontWeight: 700 }}>{`${months[currentDate.getMonth()]} ${currentDate.getFullYear()}`}</p>
 
                     <Button onClick={handleNextMonth} disabled={!isNextMonthAvailable()}>
-                        <GoChevronRight size={24} style={{ color: !isNextMonthAvailable() ? "var(--color-dark-gray)" : "var(--bg-primary-green)", cursor: !isNextMonthAvailable() ? "not-allowed" : "pointer" }} />
+                        <GoChevronRight size={24} style={{ color: !isNextMonthAvailable() ? "var(--color-dark-gray)" : "var(--bg-primary-color)", cursor: !isNextMonthAvailable() ? "not-allowed" : "pointer" }} />
                     </Button>
                 </div>
 

@@ -7,7 +7,7 @@ const Notifications = () => {
 
 
     return (
-        <div style={{ background: "#D4E2FD", position: "fixed", bottom: "200px", width: "100%", height: "54px", color: "var(--bg-primary-green)" }}>
+        <div style={{ background: "#D4E2FD", position: "fixed", bottom: "200px", width: "100%", height: "54px", color: "var(--bg-primary-color)" }}>
             <p>{data.message}</p>
         </div>
     )

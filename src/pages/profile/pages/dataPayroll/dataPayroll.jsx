@@ -93,7 +93,7 @@ const DataPayroll = () => {
             }}
           >
             {submissionType}
-            <MdNavigateNext size={"18px"} color="var(--bg-primary-green)" />
+            <MdNavigateNext size={"18px"} color="var(--bg-primary-color)" />
           </div>
 
           {(submissionType == "Informasi Gaji" || submissionType == "Salary Information") && (

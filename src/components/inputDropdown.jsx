@@ -51,7 +51,7 @@ const InputDropdown = ({
                 }}
             >
                 {value || noValue}
-                {!actuallyDisabled ? <FaChevronRight size={14} color="var(--bg-primary-green)" /> : null}
+                {!actuallyDisabled ? <FaChevronRight size={14} color="var(--bg-primary-color)" /> : null}
             </div>
 
             {errorMessage ? (

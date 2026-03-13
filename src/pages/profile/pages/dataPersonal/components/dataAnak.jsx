@@ -236,7 +236,7 @@ const DataAnak = ({ data, setDataSubmit, isUpdate, isLoadingSubmit, isOnboarding
             {isUpdate && (
                 <CustomButton
                     bg={"transparent"}
-                    color={"var(--bg-primary-green)"}
+                    color={"var(--bg-primary-color)"}
                     border={"none"}
                     text={translate("add_child", language)}
                     handleClick={addChild}

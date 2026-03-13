@@ -26,17 +26,17 @@ const CustomPopup = ({ popupOpened, setPopupOpened, handleConfirm, handleCancel,
                 {btnNo ? (
                     <ButtonFixBottomPopup>
                         <CustomButton
-                            color={"var(--bg-primary-green)"}
+                            color={"var(--bg-primary-color)"}
                             bg={"transparent"}
-                            border={"1px solid var(--bg-primary-green)"}
+                            border={"1px solid var(--bg-primary-color)"}
                             text={btnNo}
                             handleClick={handleCancel}
                         />
 
                         <CustomButton
                             color={"white"}
-                            bg={"var(--bg-primary-green)"}
-                            border={"1px solid var(--bg-primary-green)"}
+                            bg={"var(--bg-primary-color)"}
+                            border={"1px solid var(--bg-primary-color)"}
                             text={btnYes}
                             handleClick={handleConfirm}
                         />
@@ -45,8 +45,8 @@ const CustomPopup = ({ popupOpened, setPopupOpened, handleConfirm, handleCancel,
                     <ButtonFixBottomPopup>
                         <CustomButton
                             color={"white"}
-                            bg={"var(--bg-primary-green)"}
-                            border={"1px solid var(--bg-primary-green)"}
+                            bg={"var(--bg-primary-color)"}
+                            border={"1px solid var(--bg-primary-color)"}
                             text={btnYes}
                             handleClick={handleConfirm}
                         />

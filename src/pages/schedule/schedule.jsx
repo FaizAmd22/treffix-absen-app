@@ -148,7 +148,7 @@ const SchedulePage = () => {
             <div style={{ margin: 0, color: theme === "light" ? "black" : "white", padding: "15px 10px" }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                     <Button onClick={handlePrevMonth}>
-                        <MdNavigateBefore size={"20px"} color="var(--bg-primary-green)" />
+                        <MdNavigateBefore size={"20px"} color="var(--bg-primary-color)" />
                     </Button>
 
                     <p style={{ fontWeight: "700", fontSize: "var(--font-lg)" }}>
@@ -156,7 +156,7 @@ const SchedulePage = () => {
                     </p>
 
                     <Button onClick={handleNextMonth}>
-                        <MdNavigateNext size={"20px"} color="var(--bg-primary-green)" />
+                        <MdNavigateNext size={"20px"} color="var(--bg-primary-color)" />
                     </Button>
                 </div>
 
@@ -280,7 +280,7 @@ const SchedulePage = () => {
                 slot="fixed"
                 onClick={() => f7.views.main.router.navigate('/add-schedule/')}
             >
-                <div style={{ width: "100%", height: "100%", background: "var(--bg-primary-green)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <div style={{ width: "100%", height: "100%", background: "var(--bg-primary-color)", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <AddScheduleIcon fillColor='white' width={32} height={32} />
                 </div>
             </Fab>

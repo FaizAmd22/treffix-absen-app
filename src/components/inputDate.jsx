@@ -53,13 +53,13 @@ const InputDate = ({
                 }}
             >
                 <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                    <CalendarIcon fillColor="var(--bg-primary-green)" width={18} height={18} />
+                    <CalendarIcon fillColor="var(--bg-primary-color)" width={18} height={18} />
                     <p style={{ margin: 0 }}>
                         {value ? formatDate(value, language) : noValue}
                     </p>
                 </div>
 
-                {!disabled ? (<FaChevronRight size={14} color="var(--bg-primary-green)" />) : null}
+                {!disabled ? (<FaChevronRight size={14} color="var(--bg-primary-color)" />) : null}
 
                 <input
                     type="date"

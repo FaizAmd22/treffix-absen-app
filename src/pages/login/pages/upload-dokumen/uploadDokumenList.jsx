@@ -11,12 +11,12 @@ import UploadPicturePopup from '../../../../components/uploadPicturePopup'
 import { translate } from '../../../../utils/translate'
 import { selectLanguages } from '../../../../slices/languagesSlice'
 import MessageAlert from '../../../../components/messageAlert'
-import AlertFailedLight from '../../../../assets/messageAlert/alert-failed-light.png'
-import AlertFailedDark from '../../../../assets/messageAlert/alert-failed-dark.png'
 import Loading from '../../../../components/loading'
 import CustomPopup from '../../../../components/customPopup'
 import ImageAlertLight from '../../../../assets/messageAlert/absen-light.png'
 import ImageAlertDark from '../../../../assets/messageAlert/absen-dark.png'
+import AlertFailedLight from '../../../../assets/messageAlert/alert-failed-light.png'
+import AlertFailedDark from '../../../../assets/messageAlert/alert-failed-dark.png'
 
 const isCordova = () =>
     typeof window !== 'undefined' && window.cordova;
@@ -286,7 +286,7 @@ const UploadDokumenList = () => {
                 <CustomButton
                     handleClick={() => setPopupOpened(true)}
                     color={!isDisableSubmit ? "#B3B3B3" : "white"}
-                    bg={!isDisableSubmit ? "#F0F0F0" : "var(--bg-primary-green)"}
+                    bg={!isDisableSubmit ? "#F0F0F0" : "var(--bg-primary-color)"}
                     text={"Berkas Sudah Lengkap"}
                     disable={!isDisableSubmit}
                 />

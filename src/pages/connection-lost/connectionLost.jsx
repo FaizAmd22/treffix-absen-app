@@ -58,7 +58,7 @@ const ConnectionLost = () => {
 
                     <CustomButton
                         color={"white"}
-                        bg={"var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
                         text={translate('reload', language)}
                         handleClick={handleReload}
                     />

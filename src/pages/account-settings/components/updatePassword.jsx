@@ -188,7 +188,7 @@ const UpdatePassword = () => {
                 <CustomButton
                     handleClick={handleSubmit}
                     color={"white"}
-                    bg={"var(--bg-primary-green)"}
+                    bg={"var(--bg-primary-color)"}
                     disable={showLoading}
                     // disable
                     text={translate('update_password_update_password_button', language)}

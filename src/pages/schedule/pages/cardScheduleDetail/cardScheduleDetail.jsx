@@ -46,28 +46,28 @@ const CardScheduleDetail = () => {
                         </div>
                     </div>
 
-                    <IoLocationOutline size={25} style={{ margin: "15px 0", color: "var(--bg-primary-green)" }} />
+                    <IoLocationOutline size={25} style={{ margin: "15px 0", color: "var(--bg-primary-color)" }} />
                     <p style={{ margin: "15px 0", textTransform: "capitalize" }}>{dataCard?.metadata?.address || dataCard?.metadata?.method || "-"}</p>
 
-                    <BsArrowRepeat size={25} style={{ margin: "15px 0", color: "var(--bg-primary-green)" }} />
+                    <BsArrowRepeat size={25} style={{ margin: "15px 0", color: "var(--bg-primary-color)" }} />
                     <p style={{ margin: "15px 0" }}>{labelFilter(dataCard.recurrence_type, language)}</p>
 
                     <div style={{ display: "flex", justifyContent: "center", width: "25px", marginTop: "15px" }}>
-                        <ReimburseIcon fillColor="var(--bg-primary-green)" width={20} height={20} />
+                        <ReimburseIcon fillColor="var(--bg-primary-color)" width={20} height={20} />
                     </div>
                     <p style={{ margin: "15px 0" }}>{dataCard?.metadata?.notes ? dataCard?.metadata?.notes : "-"}</p>
 
                     {dataCard.schedule_type == "interview" && (
                         <>
                             <div style={{ display: "flex", justifyContent: "center", width: "25px", marginTop: "15px" }}>
-                                <UserIcon fillColor="var(--bg-primary-green)" width={20} height={20} />
+                                <UserIcon fillColor="var(--bg-primary-color)" width={20} height={20} />
                             </div>
                             <p style={{ margin: "15px 0" }}>
                                 {dataCard.guests.length > 0 ? dataCard.guests.map(item => item.name).join(", ") : "-"}
                             </p>
 
                             <div style={{ display: "flex", justifyContent: "center", width: "25px", marginTop: "15px" }}>
-                                <VideoIcon fillColor="var(--bg-primary-green)" width={20} height={20} />
+                                <VideoIcon fillColor="var(--bg-primary-color)" width={20} height={20} />
                             </div>
                             <Link href external style={{ margin: "15px 0", textAlign: "start", width: "auto", display: "inline" }}>{dataCard?.metadata?.meet_link ? dataCard?.metadata?.meet_link : " - "}</Link>
                         </>
@@ -89,8 +89,8 @@ const CardScheduleDetail = () => {
 
                         <CustomButton
                             color={"white"}
-                            bg={"var(--bg-primary-green)"}
-                            border={"1px solid var(--bg-primary-green)"}
+                            bg={"var(--bg-primary-color)"}
+                            border={"1px solid var(--bg-primary-color)"}
                             text={"Edit"}
                             handleClick={() => f7.views.main.router.navigate('/update-schedule/')}
                         />

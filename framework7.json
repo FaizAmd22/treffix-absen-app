@@ -3,14 +3,14 @@
   "type": [
     "cordova"
   ],
-  "name": "Ngabsen",
+  "name": "Fixwork",
   "framework": "react",
   "template": "tabs",
   "bundler": "vite",
   "cssPreProcessor": "less",
   "theming": {
     "customColor": false,
-    "color": "#1d8b8e",
+    "color": "#286FF3",
     "darkMode": false,
     "iconFonts": true
   },

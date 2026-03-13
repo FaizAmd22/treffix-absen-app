@@ -34,7 +34,7 @@ const InputMonth = ({ title, periodValue, id, placeholder, onChange, language, t
                     height: "45px",
                     padding: "0 15px"
                 }}>
-                    <CalendarIcon fillColor="var(--bg-primary-green)" width={18} height={18} />
+                    <CalendarIcon fillColor="var(--bg-primary-color)" width={18} height={18} />
                     <div style={{
                         width: "90vw",
                         display: "flex",
@@ -45,7 +45,7 @@ const InputMonth = ({ title, periodValue, id, placeholder, onChange, language, t
                             {periodValue ? formatPeriodLabel(periodValue) : translate('all_period', language)}
                         </p>
 
-                        {!disabled && (<FaChevronRight size={"16px"} style={{ color: "var(--bg-primary-green)" }} />)}
+                        {!disabled && (<FaChevronRight size={"16px"} style={{ color: "var(--bg-primary-color)" }} />)}
                     </div>
                 </div>
 

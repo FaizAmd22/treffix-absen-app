@@ -38,7 +38,7 @@ const GrandLeaveInfoPopup = ({ sheetOpened, setSheetOpened }) => {
 
                 <div style={{ display: 'flex', justifyContent: 'center', gap: "40px", padding: "20px 0", fontSize: "var(--font-sm)" }}>
                     <div
-                        style={{ border: "1px solid var(--bg-primary-green)", background: "var(--bg-primary-green)", width: "90%", borderRadius: "8px", textAlign: "center", cursor: "pointer" }}
+                        style={{ border: "1px solid var(--bg-primary-color)", background: "var(--bg-primary-color)", width: "90%", borderRadius: "8px", textAlign: "center", cursor: "pointer" }}
                         onClick={() => setSheetOpened(false)}
                     >
                         <p style={{ color: "white", fontWeight: 700, padding: "11px 0", margin: 0 }}>{translate('i_understand', language)}</p>

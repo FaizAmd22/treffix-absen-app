@@ -134,7 +134,7 @@ const OvertimeDetails = () => {
                     <p style={{ fontWeight: 700, textAlign: "end", margin: "10px 0" }}>{dataDetail.reason}</p>
 
                     {/*<p style={{ margin: "10px 0" }}>{translate('overtime_location', language)}</p>
-                    <p onClick={() => f7.views.main.router.navigate('/visit-map/')} style={{ fontWeight: 700, textAlign: "end", margin: "10px 0", color: "var(--bg-primary-green)" }}>{translate('visit_view_pin_point_address', language)}</p>*/}
+                    <p onClick={() => f7.views.main.router.navigate('/visit-map/')} style={{ fontWeight: 700, textAlign: "end", margin: "10px 0", color: "var(--bg-primary-color)" }}>{translate('visit_view_pin_point_address', language)}</p>*/}
                 </div>
 
                 {/*<p style={{ fontWeight: 700, margin: 0, marginTop: "20px" }}>{translate('overtime_face_verification', language)}</p>

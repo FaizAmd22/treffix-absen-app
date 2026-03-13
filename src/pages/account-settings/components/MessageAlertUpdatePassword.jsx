@@ -35,7 +35,7 @@ const MessageAlertUpdatePassword = ({ sheetOpened, setSheetOpened, title, messag
                     <Link
                         style={{
                             width: "100%",
-                            backgroundColor: "var(--bg-primary-green)",
+                            backgroundColor: "var(--bg-primary-color)",
                             color: "white",
                             fontSize: "16px",
                             fontWeight: "700",

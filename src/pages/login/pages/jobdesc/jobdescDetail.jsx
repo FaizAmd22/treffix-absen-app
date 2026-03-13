@@ -89,7 +89,7 @@ const JobdescDetailPage = () => {
                     <div style={{ display: "flex", gap: "10px", textAlign: "start", paddingTop: "20px" }}>
                         <div onClick={() => setIsChecked(!isChecked)}>
                             {isChecked ? (
-                                <MdCheckBox size={30} style={{ color: "var(--bg-primary-green)" }} />
+                                <MdCheckBox size={30} style={{ color: "var(--bg-primary-color)" }} />
                             ) : (
                                 <MdCheckBoxOutlineBlank size={30} style={{ color: "var(--color-gray)" }} />
                             )}
@@ -106,7 +106,7 @@ const JobdescDetailPage = () => {
                 <CustomButton
                     handleClick={handleNextStep}
                     color={"white"}
-                    bg={isChecked ? "var(--bg-primary-green)" : "var(--color-gray)"}
+                    bg={isChecked ? "var(--bg-primary-color)" : "var(--color-gray)"}
                     disable={!isChecked}
                     text={"Saya Sudah Paham"}
                 />

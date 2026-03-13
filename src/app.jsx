@@ -21,7 +21,7 @@ const MyApp = () => {
   }, []);
 
   const f7params = {
-    name: 'Ngabsen',
+    name: 'Fixwork',
     theme: 'auto',
     routes: routes,
     input: {
@@ -128,7 +128,7 @@ const MyApp = () => {
       styles={{
         popover: (base) => ({
           ...base,
-          '--reactour-accent': 'var(--bg-primary-green)',
+          '--reactour-accent': 'var(--bg-primary-color)',
           borderRadius: 10,
           width: "250px",
           background: "#212121",
@@ -159,7 +159,7 @@ const MyApp = () => {
               }
             }}
             style={{
-              color: 'var(--bg-primary-green)',
+              color: 'var(--bg-primary-color)',
               background: 'none',
               border: 'none',
               fontWeight: 700,

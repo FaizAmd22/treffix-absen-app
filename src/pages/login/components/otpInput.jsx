@@ -186,7 +186,7 @@ const OTPInput = ({ emailNip, password, setErrorMessage, setIsOtpVisible }) => {
 
             <p style={{ textAlign: "center" }}>
                 {translate('otp_input_enter_otp_label', language)}
-                <span style={{ fontWeight: "700", color: "var(--bg-primary-green)" }}>{countdown} </span>
+                <span style={{ fontWeight: "700", color: "var(--bg-primary-color)" }}>{countdown} </span>
                 {translate('seconds', language)}
             </p>
 
@@ -201,7 +201,7 @@ const OTPInput = ({ emailNip, password, setErrorMessage, setIsOtpVisible }) => {
                             onChange={(e) => handleChange(e.target.value, index)}
                             onKeyUp={(e) => handleBackspaceAndEnter(e, index)}
                             ref={(reference) => (otpBoxReference.current[index] = reference)}
-                            onFocus={(e) => e.target.style.border = "1px solid var(--bg-primary-green)"}
+                            onFocus={(e) => e.target.style.border = "1px solid var(--bg-primary-color)"}
                             onBlur={(e) => {
                                 if (!otp[index]) {
                                     e.target.style.border = "1px solid var(--border-primary-gray)";
@@ -223,7 +223,7 @@ const OTPInput = ({ emailNip, password, setErrorMessage, setIsOtpVisible }) => {
 
                 <p style={{ color: "var(--color-red)", height: "30px", textAlign: "center", marginTop: "20px", marginBottom: 0 }}>{otpError && otpError}</p>
 
-                <Button type="submit" style={{ width: "100%", backgroundColor: "var(--bg-primary-green)", color: "white", fontSize: "14px", fontWeight: "700", padding: "20px 0px", textTransform: "capitalize", borderRadius: "8px" }}>
+                <Button type="submit" style={{ width: "100%", backgroundColor: "var(--bg-primary-color)", color: "white", fontSize: "14px", fontWeight: "700", padding: "20px 0px", textTransform: "capitalize", borderRadius: "8px" }}>
                     {translate('login', language)}
                 </Button>
 
@@ -231,7 +231,7 @@ const OTPInput = ({ emailNip, password, setErrorMessage, setIsOtpVisible }) => {
                     <p>{translate('otp_input_dont_recive_otp', language)}</p>
 
                     <Button
-                        style={{ fontSize: "14px", fontWeight: countdown !== 0 ? "normal" : "700", cursor: countdown === 0 ? "pointer" : "not-allowed", color: countdown === 0 ? "var(--bg-primary-green)" : (theme == "light" ? "var(--color-dark-gray)" : "var(--color-gray)"), background: "none", border: "none", padding: 0, marginLeft: "3px", textTransform: "capitalize" }}
+                        style={{ fontSize: "14px", fontWeight: countdown !== 0 ? "normal" : "700", cursor: countdown === 0 ? "pointer" : "not-allowed", color: countdown === 0 ? "var(--bg-primary-color)" : (theme == "light" ? "var(--color-dark-gray)" : "var(--color-gray)"), background: "none", border: "none", padding: 0, marginLeft: "3px", textTransform: "capitalize" }}
                         onClick={handleResend}
                         disabled={countdown !== 0}
                     >
@@ -241,7 +241,7 @@ const OTPInput = ({ emailNip, password, setErrorMessage, setIsOtpVisible }) => {
             </form>
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "2px" }}>
-                <Link onClick={() => setIsOtpVisible(false)} style={{ fontWeight: "bold", fontSize: "14px", color: "var(--bg-primary-green)" }}>{translate('back', language)}</Link>
+                <Link onClick={() => setIsOtpVisible(false)} style={{ fontWeight: "bold", fontSize: "14px", color: "var(--bg-primary-color)" }}>{translate('back', language)}</Link>
             </div>
 
             <LoadingPopup popupOpened={showLoading} setPopupOpened={setShowLoading} />

@@ -363,7 +363,7 @@ const ApprovalPage = () => {
           <div style={{
             width: "85%",
             display: "flex",
-            color: "var(--bg-primary-green)",
+            color: "var(--bg-primary-color)",
             gap: "10px",
             alignItems: "center",
             border: theme === "light" ? "1px solid var(--border-primary-gray)" : "1px solid #363636",

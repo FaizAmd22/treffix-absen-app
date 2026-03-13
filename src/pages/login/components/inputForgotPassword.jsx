@@ -67,7 +67,7 @@ const InputForgotPassword = ({ handleSendOtp, email, setEmail, isLoading }) => {
                     type="submit"
                     style={{
                         width: "100%",
-                        backgroundColor: isLoading ? "#ccc" : "var(--bg-primary-green)",
+                        backgroundColor: isLoading ? "#ccc" : "var(--bg-primary-color)",
                         color: "white",
                         fontSize: "14px",
                         fontWeight: "700",

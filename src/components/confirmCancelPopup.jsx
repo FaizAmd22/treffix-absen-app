@@ -80,9 +80,9 @@ const ConfirmCancelPopup = ({ popupOpened, setIsCancelConfirmPopup, setIsCancelP
 
                 <ButtonFixBottomPopup>
                     <CustomButton
-                        color={"var(--bg-primary-green)"}
+                        color={"var(--bg-primary-color)"}
                         bg={"transparent"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         opacity={isLoading ? 0.7 : 1}
                         text={translate('back', language)}
                         handleClick={onClose}
@@ -90,8 +90,8 @@ const ConfirmCancelPopup = ({ popupOpened, setIsCancelConfirmPopup, setIsCancelP
 
                     <CustomButton
                         color={"white"}
-                        bg={"var(--bg-primary-green)"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         opacity={isLoading ? 0.7 : 1}
                         text={isLoading ? <Preloader color="white" size={20} style={{ margin: "10px 0" }} /> : translate('cancel', language)}
                         handleClick={handleConfirmCancel}

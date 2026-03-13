@@ -354,7 +354,7 @@ const UploadDokumenForm = () => {
                                 justifyContent: "center",
                                 alignItems: "center"
                             }}>
-                                <CameraIcon fillColor="var(--bg-primary-green)" width={30} height={30} />
+                                <CameraIcon fillColor="var(--bg-primary-color)" width={30} height={30} />
                             </div>
                             <p style={{ marginTop: "10px", color: "black" }}>Upload File</p>
                         </div>
@@ -385,7 +385,7 @@ const UploadDokumenForm = () => {
                     <CustomButton
                         handleClick={handleSubmit}
                         color={"white"}
-                        bg={areRequiredDocumentsUploaded() ? "var(--bg-primary-green)" : "var(--color-gray)"}
+                        bg={areRequiredDocumentsUploaded() ? "var(--bg-primary-color)" : "var(--color-gray)"}
                         disable={!areRequiredDocumentsUploaded()}
                         text={"Upload"}
                     />

@@ -35,7 +35,7 @@ const InputTime = ({ title, value, noValue, id, onChange, min = "", theme, disab
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                     <FaRegClock
                         size={"16px"}
-                        style={{ color: "var(--bg-primary-green)" }}
+                        style={{ color: "var(--bg-primary-color)" }}
                     />
 
                     <p style={{ margin: 0, color: theme === "light" ? "black" : "white", fontSize: "var(--font-sm)" }}>
@@ -43,7 +43,7 @@ const InputTime = ({ title, value, noValue, id, onChange, min = "", theme, disab
                     </p>
                 </div>
 
-                <FaChevronRight size={"14px"} color="var(--bg-primary-green)" />
+                <FaChevronRight size={"14px"} color="var(--bg-primary-color)" />
 
                 <input
                     type="time"

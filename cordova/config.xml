@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.treffix.ngabsen" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Ngabsen</name>
+<widget id="com.treffix.qerja" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Fixwork</name>
     <description>Human Resources Aplication</description>
     <author email="faizhal@treffix.id" href="https://treffix.id">
         Treffix Team
@@ -16,7 +16,8 @@
         <preference name="android-minSdkVersion" value="22" />
         <preference name="SplashMaintainAspectRatio" value="true" />
         <preference name="AndroidWindowSplashScreenShowOnlyFirstTime" value="false" />
-        <preference name="AndroidWindowSplashScreenBackground" value="#1d8b8e" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#286FF3" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splash.png" />
         <preference name="AndroidWindowSplashScreenScaleType" value="FIT_XY" />
         <preference name="AndroidXEnabled" value="true" />
         <config-file parent="/*" target="AndroidManifest.xml">
@@ -53,19 +54,19 @@
         <preference name="hostname" value="localhost" />
         <preference name="StatusBarOverlaysWebView" value="true" />
         <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
-            <string>Ngabsen uses the camera to take a photo for attendance verification (to confirm the photo matches the registered employee), to scan QR codes, and to capture documents (e.g., receipts). Attendance photos are uploaded to secure cloud storage and shown to authorized HR administrators on the company dashboard as part of attendance records.</string>
+            <string>Fixwork uses the camera to take a photo for attendance verification (to confirm the photo matches the registered employee), to scan QR codes, and to capture documents (e.g., receipts). Attendance photos are uploaded to secure cloud storage and shown to authorized HR administrators on the company dashboard as part of attendance records.</string>
         </config-file>
         <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
-            <string>Ngabsen accesses your photo library when you choose images for attachments or to update your profile photo.</string>
+            <string>Fixwork accesses your photo library when you choose images for attachments or to update your profile photo.</string>
         </config-file>
         <config-file parent="NSPhotoLibraryAddUsageDescription" target="*-Info.plist">
-            <string>Ngabsen saves images to your photo library only when you choose to export or save them.</string>
+            <string>Fixwork saves images to your photo library only when you choose to export or save them.</string>
         </config-file>
         <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist">
-            <string>Ngabsen uses your location during attendance to verify you are within your office’s geofence when checking in or out.</string>
+            <string>Fixwork uses your location during attendance to verify you are within your office’s geofence when checking in or out.</string>
         </config-file>
         <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist">
-            <string>Ngabsen uses your location in the background to support geofenced attendance when you arrive at or leave your workplace, if enabled by your employer.</string>
+            <string>Fixwork uses your location in the background to support geofenced attendance when you arrive at or leave your workplace, if enabled by your employer.</string>
         </config-file>
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
         <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />

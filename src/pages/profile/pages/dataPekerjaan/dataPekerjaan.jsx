@@ -80,7 +80,7 @@ const DataPekerjaan = () => {
                         }}
                     >
                         {submissionType}
-                        <MdNavigateNext size={"18px"} color="var(--bg-primary-green)" />
+                        <MdNavigateNext size={"18px"} color="var(--bg-primary-color)" />
                     </div>
 
                     {submissionType == translate('profile_employment_data', language) && (

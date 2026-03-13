@@ -65,7 +65,7 @@ const FilterOvertimePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, tem
                                     key={index}
                                     onClick={() => toggleSelection(item.type, tempSelectedType, setTempSelectedType)}
                                     style={{
-                                        backgroundColor: tempSelectedType.includes(item.type) ? 'var(--bg-primary-green)' : theme == "light" ? '#E9E9E9' : "#212121",
+                                        backgroundColor: tempSelectedType.includes(item.type) ? 'var(--bg-primary-color)' : theme == "light" ? '#E9E9E9' : "#212121",
                                         color: tempSelectedType.includes(item.type) ? 'white' : theme == "light" ? 'black' : "white",
                                         margin: '5px',
                                         padding: "4px 18px",
@@ -87,7 +87,7 @@ const FilterOvertimePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, tem
                                     key={index}
                                     onClick={() => toggleSelection(item.status, tempSelectedStatus, setTempSelectedStatus)}
                                     style={{
-                                        backgroundColor: tempSelectedStatus.includes(item.status) ? 'var(--bg-primary-green)' : theme == "light" ? '#E9E9E9' : "#212121",
+                                        backgroundColor: tempSelectedStatus.includes(item.status) ? 'var(--bg-primary-color)' : theme == "light" ? '#E9E9E9' : "#212121",
                                         color: tempSelectedStatus.includes(item.status) ? 'white' : theme == "light" ? 'black' : "white",
                                         margin: '5px',
                                         padding: "4px 18px",
@@ -105,7 +105,7 @@ const FilterOvertimePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, tem
                         <p style={{ fontSize: "var(--font-md)", fontWeight: 700, marginTop: "30px" }}>{translate('period', language)}</p>
                         <div style={{ border: theme == "light" ? "1px solid var(--border-primary-gray)" : "1px solid #363636", borderRadius: "8px", marginTop: "20px", height: "45px" }}>
                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px", height: "45px", padding: "0 15px" }}>
-                                <CalendarIcon fillColor="var(--bg-primary-green)" width={18} height={18} />
+                                <CalendarIcon fillColor="var(--bg-primary-color)" width={18} height={18} />
                                 <div style={{ width: "90vw", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                     <p style={{ margin: 0, fontWeight: 700 }}>{tempSelectedPeriod ? formatPeriodLabel(tempSelectedPeriod) : translate('all_period', language)}</p>
                                     <FaChevronRight style={{ fontSize: "16px", opacity: 0.7 }} />
@@ -137,17 +137,17 @@ const FilterOvertimePopup = ({ isFilterPopup, closeFilterPopup, applyFilter, tem
 
                 <ButtonFixBottomPopup>
                     <CustomButton
-                        color={"var(--bg-primary-green)"}
+                        color={"var(--bg-primary-color)"}
                         bg={"transparent"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('procurement_cancel', language)}
                         handleClick={closeFilterPopup}
                     />
 
                     <CustomButton
                         color={"white"}
-                        bg={"var(--bg-primary-green)"}
-                        border={"1px solid var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
+                        border={"1px solid var(--bg-primary-color)"}
                         text={translate('procurement_apply', language)}
                         handleClick={applyFilter}
                     />

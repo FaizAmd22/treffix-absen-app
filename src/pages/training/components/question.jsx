@@ -332,7 +332,7 @@ const QuestionPage = () => {
                             <p>{selectedOptions.length} {translate('from', language)} {questions.length}</p>
                         </div>
 
-                        <Progressbar progress={(currentQuestion + 1) / questions.length * 100} bgColor='var(--border-primary-gray)' color="var(--bg-primary-green)" style={{ borderRadius: "20px", height: "8px" }} />
+                        <Progressbar progress={(currentQuestion + 1) / questions.length * 100} bgColor='var(--border-primary-gray)' color="var(--bg-primary-color)" style={{ borderRadius: "20px", height: "8px" }} />
 
                         <div style={{ display: "flex", justifyContent: "space-between", fontSize: "var(--font-sm)", fontWeight: 400 }}>
                             <p>{translate('question_time_remaining', language)}</p>
@@ -360,9 +360,9 @@ const QuestionPage = () => {
                                             key={option.id}
                                             onClick={() => handleOptionSelect(index)}
                                             style={{
-                                                backgroundColor: selectedOptions[currentQuestion] === index ? "var(--bg-primary-green-transparent)" : "transparent",
-                                                color: selectedOptions[currentQuestion] === index ? "var(--bg-primary-green)" : (theme === "light" ? "black" : "white"),
-                                                border: selectedOptions[currentQuestion] === index ? "1px solid var(--bg-primary-green)" : (theme === "light" ? "1px solid #DEDEDE" : "1px solid #363636"),
+                                                backgroundColor: selectedOptions[currentQuestion] === index ? "var(--bg-primary-color-transparent)" : "transparent",
+                                                color: selectedOptions[currentQuestion] === index ? "var(--bg-primary-color)" : (theme === "light" ? "black" : "white"),
+                                                border: selectedOptions[currentQuestion] === index ? "1px solid var(--bg-primary-color)" : (theme === "light" ? "1px solid #DEDEDE" : "1px solid #363636"),
                                                 borderRadius: "12px",
                                                 marginBottom: "10px",
                                                 padding: "10px",
@@ -407,9 +407,9 @@ const QuestionPage = () => {
                     <ButtonFixBottom needBorderTop={true}>
                         <div style={{ width: "100%", display: "flex", justifyContent: "space-between", gap: "20px" }}>
                             <CustomButton
-                                color={currentQuestion === 0 ? "var(--color-gray)" : "var(--bg-primary-green)"}
+                                color={currentQuestion === 0 ? "var(--color-gray)" : "var(--bg-primary-color)"}
                                 bg={currentQuestion === 0 ? "#D9DADC" : "transparent"}
-                                border={currentQuestion === 0 ? "1px solid #D9DADC" : "1px solid var(--bg-primary-green)"}
+                                border={currentQuestion === 0 ? "1px solid #D9DADC" : "1px solid var(--bg-primary-color)"}
                                 text={translate('prev', language)}
                                 handleClick={handlePrev}
                                 disable={currentQuestion === 0}
@@ -417,8 +417,8 @@ const QuestionPage = () => {
 
                             <CustomButton
                                 color={"white"}
-                                bg={"var(--bg-primary-green)"}
-                                border={"1px solid var(--bg-primary-green)"}
+                                bg={"var(--bg-primary-color)"}
+                                border={"1px solid var(--bg-primary-color)"}
                                 text={currentQuestion === questions.length - 1 ? translate('done', language) : translate('next', language)}
                                 handleClick={handleNext}
                             />

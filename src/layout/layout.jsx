@@ -166,9 +166,9 @@ const Layout = () => {
                             )}
 
                             <div style={{ width: "25px", height: "25px", paddingTop: "8px" }}>
-                                {activeTab === tab.id ? <ActiveIcons fillColor="var(--bg-primary-green)" width={28} height={28} /> : <Icons fillColor={"#B8B8B8"} width={28} height={28} />}
+                                {activeTab === tab.id ? <ActiveIcons fillColor="var(--bg-primary-color)" width={28} height={28} /> : <Icons fillColor={"#B8B8B8"} width={28} height={28} />}
                             </div>
-                            <p style={{ fontSize: '12px', marginTop: '6px', color: activeTab !== tab.id ? "var(--color-dark-gray)" : "var(--bg-primary-green)" }}>
+                            <p style={{ fontSize: '12px', marginTop: '6px', color: activeTab !== tab.id ? "var(--color-dark-gray)" : "var(--bg-primary-color)" }}>
                                 {tab.label}
                             </p>
                         </Link>

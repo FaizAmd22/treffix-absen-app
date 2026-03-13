@@ -32,7 +32,7 @@ const UserProfile = () => {
 
 
     return (
-        <div style={{ background: theme === "light" ? "var(--bg-primary-black)" : "linear-gradient(#33a59d, #0f7a84)", color: "white", paddingBottom: "40px" }}>
+        <div style={{ background: theme === "light" ? "var(--bg-primary-black)" : "var(--bg-primary-color)", color: "white", paddingBottom: "40px" }}>
             <img src={TextureBg} alt="TextureBg" style={{ width: "100%", height: "320px", objectFit: "cover", position: "fixed", opacity: "20%" }} />
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", padding: "20px", gap: "8px", paddingTop: "30px" }}>
                 <img src={user.profile_pic ? user.profile_pic : UserPic} alt="ProfileImage" style={{ width: "120px", height: "120px", objectFit: "cover", borderRadius: "50%", position: "relative", zIndex: 99 }} />
@@ -54,8 +54,8 @@ const UserProfile = () => {
                 style={{
                     width: "90%",
                     height: "56px",
-                    background: theme === "light" ? "var(--bg-primary-green)" : "var(--bg-primary-black)",
-                    color: theme === "light" ? "white" : "var(--bg-primary-green)",
+                    background: theme === "light" ? "var(--bg-primary-color)" : "var(--bg-primary-black)",
+                    color: theme === "light" ? "white" : "var(--bg-primary-color)",
                     fontSize: "var(--font-sm)",
                     fontWeight: "700",
                     padding: "20px 0px",

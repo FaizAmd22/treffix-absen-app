@@ -83,7 +83,7 @@ const InputOtpForgetPassword = ({
 
             <p style={{ textAlign: "center", marginBottom: "30px" }}>
                 {translate('input_otp_forgot_enter_code_label', language)}
-                <span style={{ fontWeight: "700", color: "var(--bg-primary-green)" }}>{countdown} </span>
+                <span style={{ fontWeight: "700", color: "var(--bg-primary-color)" }}>{countdown} </span>
                 {translate('seconds', language)}
             </p>
 
@@ -102,7 +102,7 @@ const InputOtpForgetPassword = ({
                             onChange={(e) => handleInputChange(e.target.value, index)}
                             onKeyUp={(e) => handleBackspaceAndEnter(e, index)}
                             ref={(reference) => (otpBoxReference.current[index] = reference)}
-                            onFocus={(e) => e.target.style.border = "1px solid var(--bg-primary-green)"}
+                            onFocus={(e) => e.target.style.border = "1px solid var(--bg-primary-color)"}
                             onBlur={(e) => {
                                 if (!otpArray[index]) {
                                     e.target.style.border = "1px solid var(--border-primary-gray)";
@@ -140,7 +140,7 @@ const InputOtpForgetPassword = ({
                     disabled={isLoading}
                     style={{
                         width: "100%",
-                        backgroundColor: isLoading ? "#ccc" : "var(--bg-primary-green)",
+                        backgroundColor: isLoading ? "#ccc" : "var(--bg-primary-color)",
                         color: "white",
                         fontSize: "14px",
                         fontWeight: "700",
@@ -169,7 +169,7 @@ const InputOtpForgetPassword = ({
                             fontWeight: !resendDisabled ? "700" : "normal",
                             cursor: !resendDisabled ? "pointer" : "not-allowed",
                             color: !resendDisabled
-                                ? "var(--bg-primary-green)"
+                                ? "var(--bg-primary-color)"
                                 : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)"),
                             background: "none",
                             border: "none",

@@ -2,8 +2,8 @@
 
 :root {
     --bg-primary-white: #FFFFFF;
-    --bg-primary-green: #1d8b8e;
-    --bg-primary-green-transparent: #1d8a8e26;
+    --bg-primary-color: #286FF3;
+    --bg-primary-color-transparent: #286FF326;
     --bg-primary-black: #010101;
     --border-primary-gray: #E9E9E9;
     
@@ -27,14 +27,14 @@
     --color-gray: #B0B0B0;
     --color-dark-gray: #606470;
 
-    --f7-radio-active-color: var(--bg-primary-green);
-    --f7-toggle-active-bg-color: var(--bg-primary-green);
-    --f7-md-toggle-active-track-color: var(--bg-primary-green);
+    --f7-radio-active-color: var(--bg-primary-color);
+    --f7-toggle-active-bg-color: var(--bg-primary-color);
+    --f7-md-toggle-active-track-color: var(--bg-primary-color);
     /* --f7-toggle-inactive-bg-color: #F4F8FE;
     --f7-md-toggle-inactive-track-color: #F4F8FE; */
     --f7-toggle-inactive-border-color: transparent;
     --f7-toggle-active-border-color: transparent;
-    --f7-ptr-preloader-color: var(--bg-primary-green);
+    --f7-ptr-preloader-color: var(--bg-primary-color);
 }
 
 * {
@@ -58,7 +58,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 }
 
 .custom-toggle {
-    --f7-toggle-active-color: var(--bg-primary-green);
+    --f7-toggle-active-color: var(--bg-primary-color);
 }  
 
 .custom-tab {
@@ -72,7 +72,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 }
 
 .custom-tab.tab-link-active {
-    color: var(--bg-primary-green) !important;
+    color: var(--bg-primary-color) !important;
     font-weight: 700 !important;
 }
 
@@ -86,8 +86,8 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 
 .custom-tab-2.tab-link-active {
     height: 70%;
-    border: 2px solid var(--bg-primary-green);
-    background-color: var(--bg-primary-green-transparent);
+    border: 2px solid var(--bg-primary-color);
+    background-color: var(--bg-primary-color-transparent);
     border-radius: 4px;
     transition: all ease-out 0.3s;
 }
@@ -146,7 +146,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
-    background-color: var(--bg-primary-green) !important;
+    background-color: var(--bg-primary-color) !important;
     width: 20px;
 }
 
@@ -228,7 +228,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
   width: 22px;
   height: 22px;
-  border: 3px solid var(--bg-primary-green);
+  border: 3px solid var(--bg-primary-color);
   border-radius: 50%;
   display: grid;
   place-content: center;
@@ -243,7 +243,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
   border-radius: 50%;
   transform: scale(0);
   transition: 0.2s ease-in-out;
-  background-color: var(--bg-primary-green);
+  background-color: var(--bg-primary-color);
 }
 
 .custom-radio input[type="radio"]:checked::before {

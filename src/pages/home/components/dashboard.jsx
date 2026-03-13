@@ -442,7 +442,7 @@ const Dashboard = ({ isRefresh }) => {
                             // disabled
                             style={{
                                 height: "50px",
-                                background: isAbsenIn ? "var(--bg-primary-green)" : "var(--color-red)",
+                                background: isAbsenIn ? "var(--bg-primary-color)" : "var(--color-red)",
                                 border: "none",
                                 borderRadius: "360px",
                                 color: "white",
@@ -497,7 +497,7 @@ const Dashboard = ({ isRefresh }) => {
                                 height: "8px",
                                 borderRadius: "360px",
                                 border: "none",
-                                background: isSwiperActive === index ? "var(--bg-primary-green)" : "#F0F0F0",
+                                background: isSwiperActive === index ? "var(--bg-primary-color)" : "#F0F0F0",
                                 cursor: "pointer",
                                 transition: "width 0.3s ease, background 0.3s ease",
                             }}
@@ -514,7 +514,7 @@ const Dashboard = ({ isRefresh }) => {
                                 <Link onClick={() => isLinked(item.link, item.coming_soon)} key={item.label}>
                                     <div style={{ width: "50px", height: "75px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", color: theme === "light" ? "black" : "white" }}>
                                         {item.coming_soon && (
-                                            <div style={{ background: "var(--bg-primary-green)", color: "white", position: "absolute", width: "70px", marginTop: "-18px", borderRadius: "4px" }}>
+                                            <div style={{ background: "var(--bg-primary-color)", color: "white", position: "absolute", width: "70px", marginTop: "-18px", borderRadius: "4px" }}>
                                                 <p style={{ fontSize: "9px", fontWeight: "700", margin: 0, padding: "5px" }}>Coming Soon</p>
                                             </div>
                                         )}
@@ -523,7 +523,7 @@ const Dashboard = ({ isRefresh }) => {
                                             <BgIcon fillColor="var(--bg-icon)" width={28} height={28} />
                                         </div>
                                         <div style={{ width: "28px", height: "28px" }}>
-                                            <Icons fillColor="var(--bg-primary-green)" width={28} height={28} />
+                                            <Icons fillColor="var(--bg-primary-color)" width={28} height={28} />
                                         </div>
                                         <p style={{ fontSize: "13px" }}>{item.label}</p>
                                     </div>
@@ -540,7 +540,7 @@ const Dashboard = ({ isRefresh }) => {
                                 <Link onClick={() => isLinked(item.link, item.coming_soon)} key={item.label}>
                                     <div style={{ width: "50px", height: "75px", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", color: theme === "light" ? "black" : "white" }}>
                                         {item.coming_soon && (
-                                            <div style={{ background: "var(--bg-primary-green)", color: "white", position: "absolute", width: "70px", marginTop: "-18px", borderRadius: "5px" }}>
+                                            <div style={{ background: "var(--bg-primary-color)", color: "white", position: "absolute", width: "70px", marginTop: "-18px", borderRadius: "5px" }}>
                                                 <p style={{ fontSize: "9px", fontWeight: "700", margin: 0, padding: "5px" }}>Coming Soon</p>
                                             </div>
                                         )}
@@ -549,7 +549,7 @@ const Dashboard = ({ isRefresh }) => {
                                             <BgIcon fillColor="var(--bg-icon)" width={28} height={28} />
                                         </div>
                                         <div style={{ width: "28px", height: "28px" }}>
-                                            <Icons fillColor="var(--bg-primary-green)" width={28} height={28} />
+                                            <Icons fillColor="var(--bg-primary-color)" width={28} height={28} />
                                         </div>
                                         <p style={{ fontSize: "13px" }}>{item.label}</p>
                                     </div>
@@ -568,7 +568,7 @@ const Dashboard = ({ isRefresh }) => {
                                 onClick={() => {
                                     f7.views.main.router.navigate('/approval/');
                                 }}
-                                style={{ color: "var(--bg-primary-green)", fontSize: "var(--font-xs)", fontWeight: "700" }}
+                                style={{ color: "var(--bg-primary-color)", fontSize: "var(--font-xs)", fontWeight: "700" }}
                             >
                                 {translate('home_see_all', language)}
                             </Link>
@@ -600,7 +600,7 @@ const Dashboard = ({ isRefresh }) => {
                                     // }
                                 });
                             }}
-                            style={{ color: "var(--bg-primary-green)", fontSize: "var(--font-xs)", fontWeight: "700" }}
+                            style={{ color: "var(--bg-primary-color)", fontSize: "var(--font-xs)", fontWeight: "700" }}
                         >
                             {translate('home_see_all', language)}
                         </Link>

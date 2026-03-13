@@ -17,7 +17,7 @@ const LoadingMoreAnimation = () => {
                 width: "20px",
                 height: "20px",
                 border: "3px solid rgba(0, 0, 0, 0.1)",
-                borderTopColor: theme === "light" ? "var(--bg-primary-green)" : "#fff",
+                borderTopColor: theme === "light" ? "var(--bg-primary-color)" : "#fff",
                 borderRadius: "50%",
                 animation: "spin 1s infinite linear",
                 marginRight: "10px",

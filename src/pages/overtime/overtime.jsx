@@ -397,7 +397,7 @@ const OvertimePage = () => {
             <ButtonFixBottom needBorderTop={true}>
                 <CustomButton
                     color={"white"}
-                    bg={"var(--bg-primary-green)"}
+                    bg={"var(--bg-primary-color)"}
                     text={translate('submit_overtime', language)}
                     handleClick={handleLink}
                 // disable

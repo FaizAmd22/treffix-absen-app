@@ -16,9 +16,9 @@ import MessageAlert from '../../../../../components/messageAlert';
 import { selectLanguages } from '../../../../../slices/languagesSlice';
 import { translate } from '../../../../../utils/translate';
 import UploadPicturePopup from '../../../../../components/uploadPicturePopup';
+import { decryptAccessDoc, prefetchDecryptDocs } from '../../../../../utils/accessDocDecrypt';
 import AlertFailedLight from '../../../../../assets/messageAlert/alert-failed-light.png'
 import AlertFailedDark from '../../../../../assets/messageAlert/alert-failed-dark.png'
-import { decryptAccessDoc, prefetchDecryptDocs } from '../../../../../utils/accessDocDecrypt';
 import ImageAlertLight from '../../../../../assets/messageAlert/absen-light.png'
 import ImageAlertDark from '../../../../../assets/messageAlert/absen-dark.png'
 
@@ -437,7 +437,7 @@ const BerkasKaryawan = ({ data }) => {
             <div style={{ marginLeft: "-4.5%" }}>
                 <ButtonFixBottom needBorderTop={false}>
                     <CustomButton
-                        bg={"var(--bg-primary-green)"}
+                        bg={"var(--bg-primary-color)"}
                         color={"white"}
                         text={translate('upload_documents', language)}
                         handleClick={handleOpenUploadPopup}

@@ -281,7 +281,7 @@ const EducationForm = ({ data, setDataSubmit, isUpdate, isLoadingSubmit, onRegis
                     gap: "4px",
                 }}
             >
-                <FiPlus style={{ width: "18px", height: "18px", color: "var(--bg-primary-green)" }} />
+                <FiPlus style={{ width: "18px", height: "18px", color: "var(--bg-primary-color)" }} />
                 Tambah Institusi
             </p>
         </div>
@@ -393,7 +393,7 @@ const EducationForm = ({ data, setDataSubmit, isUpdate, isLoadingSubmit, onRegis
 
             {isUpdate && (
                 <CustomButton
-                    color={"var(--bg-primary-green)"}
+                    color={"var(--bg-primary-color)"}
                     border={"none"}
                     text={translate("add_education_history", language)}
                     handleClick={addEducation}

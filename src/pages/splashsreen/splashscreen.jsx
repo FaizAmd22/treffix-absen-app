@@ -4,8 +4,6 @@ import { API } from '../../api/axios'
 import { useDispatch } from 'react-redux'
 import { updateUser } from '../../slices/userSlice'
 import imageSplashscreen from '../../assets/splashscreen.svg'
-import LottieWebAnimation from '../../components/LottieWebAnimation'
-import LoadingImage from '../../assets/loading/loading-white.json'
 
 const Splashscreen = () => {
     const dispatch = useDispatch()
@@ -42,7 +40,7 @@ const Splashscreen = () => {
     }, [])
 
     return (
-        <Page style={{ background: "linear-gradient(0deg,rgba(51, 165, 157, 1) 0%, rgba(15, 122, 132, 1) 100%)" }}>
+        <Page style={{ background: "var(--bg-primary-color)" }}>
             <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                 {/* <LottieWebAnimation ref={lottieRef} path={LoadingImage} width={"180px"} height={"180px"} /> */}
                 <img

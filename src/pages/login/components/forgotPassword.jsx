@@ -131,7 +131,7 @@ const ForgotPassword = ({ setEmail, email, isForgotPassword, setIsForgotPassword
             }
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "2px" }}>
-                <Link onClick={() => setIsForgotPassword(!isForgotPassword)} style={{ fontWeight: "bold", fontSize: "14px", marginTop: "-10px", color: "var(--bg-primary-green)" }}>{translate('forgot_password_back_in', language)}</Link>
+                <Link onClick={() => setIsForgotPassword(!isForgotPassword)} style={{ fontWeight: "bold", fontSize: "14px", marginTop: "-10px", color: "var(--bg-primary-color)" }}>{translate('forgot_password_back_in', language)}</Link>
             </div>
         </div>
     )

@@ -53,7 +53,7 @@ const EmailSettings = () => {
                             )
                         }
 
-                        <Button type="submit" style={{ width: "90%", backgroundColor: "var(--bg-primary-green)", color: "white", fontSize: "14px", fontWeight: "700", padding: "20px 0px", position: "fixed", bottom: "20px", textTransform: "capitalize", borderRadius: "8px" }}>
+                        <Button type="submit" style={{ width: "90%", backgroundColor: "var(--bg-primary-color)", color: "white", fontSize: "14px", fontWeight: "700", padding: "20px 0px", position: "fixed", bottom: "20px", textTransform: "capitalize", borderRadius: "8px" }}>
                             <p>{translate('email_settings_email_verify', language)}</p>
                         </Button>
                     </form>

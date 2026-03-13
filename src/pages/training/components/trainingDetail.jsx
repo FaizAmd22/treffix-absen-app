@@ -490,7 +490,7 @@ const TrainingDetail = () => {
                     (isTest || dataDetail.training_format == "single") && (method == "online" && isTodayOrPast(dataDetail.start_date)) ? (
                         <ButtonFixBottom needBorderTop={true}>
                             <CustomButton
-                                bg={dataDetail.completed ? "var(--bg-secondary-gray)" : "var(--bg-primary-green)"}
+                                bg={dataDetail.completed ? "var(--bg-secondary-gray)" : "var(--bg-primary-color)"}
                                 color={"white"}
                                 disable={dataDetail.completed}
                                 // disable
@@ -501,7 +501,7 @@ const TrainingDetail = () => {
                     ) : (isTest || dataDetail.training_format == "single") && (method == "offline" && isTodayOrPast(dataDetail.start_date)) ? (
                         <ButtonFixBottom needBorderTop={true}>
                             <CustomButton
-                                bg={dataDetail.completed ? "var(--bg-secondary-gray)" : "var(--bg-primary-green)"}
+                                bg={dataDetail.completed ? "var(--bg-secondary-gray)" : "var(--bg-primary-color)"}
                                 color={"white"}
                                 disable={dataDetail.completed}
                                 // disable

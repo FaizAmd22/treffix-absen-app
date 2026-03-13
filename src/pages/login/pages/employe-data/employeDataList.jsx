@@ -119,7 +119,7 @@ const EmployeDataList = () => {
                 <CustomButton
                     handleClick={() => setPopupOpened(true)}
                     color={!isDisableSubmit ? "#B3B3B3" : "white"}
-                    bg={!isDisableSubmit ? "#F0F0F0" : "var(--bg-primary-green)"}
+                    bg={!isDisableSubmit ? "#F0F0F0" : "var(--bg-primary-color)"}
                     text={"Data Sudah Lengkap"}
                     disable={!isDisableSubmit}
                 />

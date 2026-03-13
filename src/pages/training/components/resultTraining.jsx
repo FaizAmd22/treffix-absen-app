@@ -86,8 +86,8 @@ const ResultTraining = () => {
               tabLink={`#tab-${item.id}`}
               tabLinkActive={activeTab === item.id}
               style={{
-                color: activeTab === item.id ? "var(--bg-primary-green)" : "gray",
-                borderBottom: activeTab === item.id ? "1px solid var(--bg-primary-green)" : "none",
+                color: activeTab === item.id ? "var(--bg-primary-color)" : "gray",
+                borderBottom: activeTab === item.id ? "1px solid var(--bg-primary-color)" : "none",
                 width: "100%",
               }}
               onClick={() => setActiveTab(item.id)}
@@ -124,7 +124,7 @@ const ResultTraining = () => {
       <ButtonFixBottom needBorderTop={true}>
         <CustomButton
           color={"white"}
-          bg={"var(--bg-primary-green)"}
+          bg={"var(--bg-primary-color)"}
           text={translate("done", language)}
           handleClick={handleDoneTraining}
         />

@@ -1,8 +1,8 @@
 {
-  "name": "ngabsen-app",
+  "name": "fixwork-app",
   "private": true,
   "version": "1.0.0",
-  "description": "Ngabsen",
+  "description": "Fixwork",
   "repository": "",
   "license": "UNLICENSED",
   "scripts": {

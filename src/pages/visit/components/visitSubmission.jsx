@@ -155,12 +155,12 @@ const VisitSubmission = () => {
 
                     <p style={{ fontWeight: 700, margin: 0 }}>{translate('visit_pin_point_address', language)}</p>
                     <div style={{ border: theme === "light" ? "1px solid #E5E5E5" : "1px solid #363636", borderRadius: "8px", padding: "0 10px", display: "flex", alignItems: "center", gap: "8px" }}>
-                        <LuMapPin size={20} style={{ color: "var(--bg-primary-green)" }} />
+                        <LuMapPin size={20} style={{ color: "var(--bg-primary-color)" }} />
 
                         {userLocation ? (
                             <div onClick={handleOpenMap} style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                 <p><GetAddress locationData={userLocation} /></p>
-                                <FaChevronRight size={16} style={{ color: "var(--bg-primary-green)" }} />
+                                <FaChevronRight size={16} style={{ color: "var(--bg-primary-color)" }} />
                             </div>
                         ) : <p><GetLocation onLocationFound={setUserLocation} /></p>}
                     </div>
@@ -218,7 +218,7 @@ const VisitSubmission = () => {
                                     }}
                                 >
                                     <div style={{ width: "50px", height: "50px", background: theme == "light" ? "var(--border-primary-gray)" : "#363636", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                        <CameraIcon fillColor="var(--bg-primary-green)" width={32} height={32} />
+                                        <CameraIcon fillColor="var(--bg-primary-color)" width={32} height={32} />
                                     </div>
                                     <p style={{ marginTop: "0px" }}>{translate('visit_take_picture', language)}</p>
                                 </div>
@@ -232,7 +232,7 @@ const VisitSubmission = () => {
                         type="submit"
                         style={{
                             width: "90%",
-                            backgroundColor: (!isButtonEnabled || isLoading) ? "var(--color-dark-gray)" : visitIn != null ? "var(--color-red)" : "var(--bg-primary-green)",
+                            backgroundColor: (!isButtonEnabled || isLoading) ? "var(--color-dark-gray)" : visitIn != null ? "var(--color-red)" : "var(--bg-primary-color)",
                             color: "white",
                             fontSize: "var(--font-sm)",
                             fontWeight: "700",

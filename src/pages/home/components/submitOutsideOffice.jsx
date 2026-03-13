@@ -123,7 +123,7 @@ const SubmitOutsideOffice = () => {
 
                     <p style={{ fontWeight: 700, margin: 0 }}>{translate('absent_location', language)}</p>
                     <div style={{ border: theme == "light" ? "1px solid #ccc" : "1px solid #202020", borderRadius: "8px", padding: "0 10px", display: "flex", alignItems: "center", gap: "8px" }}>
-                        <LuMapPin size={20} style={{ color: "var(--bg-primary-green)" }} />
+                        <LuMapPin size={20} style={{ color: "var(--bg-primary-color)" }} />
 
                         <div onClick={handleOpenMap} style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                             {address ? (
@@ -131,7 +131,7 @@ const SubmitOutsideOffice = () => {
                             ) : (
                                 <p><GetAddress locationData={userLocation} /></p>
                             )}
-                            <FaChevronRight size={16} style={{ color: "var(--bg-primary-green)" }} />
+                            <FaChevronRight size={16} style={{ color: "var(--bg-primary-color)" }} />
                         </div>
                     </div>
 
@@ -152,7 +152,7 @@ const SubmitOutsideOffice = () => {
                 <CustomButton
                     handleClick={handleSubmit}
                     color={"white"}
-                    bg={note || !isLoading ? "var(--bg-primary-green)" : "var(--color-dark-gray)"}
+                    bg={note || !isLoading ? "var(--bg-primary-color)" : "var(--color-dark-gray)"}
                     disable={!note || isLoading}
                     text={isLoading ? "Loading..." : translate('confirm', language)}
                 />

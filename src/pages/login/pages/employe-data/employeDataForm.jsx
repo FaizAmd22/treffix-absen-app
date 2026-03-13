@@ -444,7 +444,7 @@ const EmployeDataForm = () => {
 
             <ButtonFixBottom needBorderTop={false}>
                 <CustomButton
-                    bg={"var(--bg-primary-green)"}
+                    bg={"var(--bg-primary-color)"}
                     color={"white"}
                     text={"Verifikasi Data"}
                     handleClick={handleVerifyClick}

@@ -276,7 +276,7 @@ const ReimburseSubmission = () => {
                                     onClick={() => setSheetPictureOpened(true)}
                                     style={{ height: "150px", flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", cursor: "pointer", borderRadius: "5px", border: theme === "light" ? "1px solid #E5E5E5" : "1px solid #363636", marginTop: "32px", marginLeft: "-10px", marginRight: "10px" }}>
                                     <div style={{ width: "50px", height: "50px", background: theme == "light" ? "var(--border-primary-gray)" : "#363636", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                        <CameraIcon fillColor="var(--bg-primary-green)" width={32} height={32} />
+                                        <CameraIcon fillColor="var(--bg-primary-color)" width={32} height={32} />
                                     </div>
                                     <p style={{ marginTop: "0px" }}>{translate('visit_take_picture', language)}</p>
                                 </div>
@@ -296,7 +296,7 @@ const ReimburseSubmission = () => {
                     ) : (
                         <CustomButton
                             color={"white"}
-                            bg={isButtonEnabled ? "var(--bg-primary-green)" : "var(--color-gray)"}
+                            bg={isButtonEnabled ? "var(--bg-primary-color)" : "var(--color-gray)"}
                             text={translate('submit', language)}
                             disable={!isButtonEnabled}
                             handleClick={handleSubmit}

@@ -387,15 +387,15 @@ const TrainingPage = () => {
                         onClick={() => handleTabChange("tab-1")}
                         style={{
                             flex: 1,
-                            border: (activeTab === "tab-1" && theme === "light") ? "1px solid white" : (activeTab === "tab-1" && theme !== "light") ? "1px solid var(--bg-primary-green)" : "none",
+                            border: (activeTab === "tab-1" && theme === "light") ? "1px solid white" : (activeTab === "tab-1" && theme !== "light") ? "1px solid var(--bg-primary-color)" : "none",
                             padding: "0px 15px",
                             textTransform: "capitalize",
                             borderRadius: "6px",
                             cursor: "pointer",
                             transition: "all 0.3s ease",
                             fontWeight: 700,
-                            background: (activeTab === "tab-1" && theme === "light") ? "white" : (activeTab === "tab-1" && theme !== "light") ? "var(--bg-primary-green-transparent)" : "transparent",
-                            color: activeTab === "tab-1" ? "var(--bg-primary-green)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
+                            background: (activeTab === "tab-1" && theme === "light") ? "white" : (activeTab === "tab-1" && theme !== "light") ? "var(--bg-primary-color-transparent)" : "transparent",
+                            color: activeTab === "tab-1" ? "var(--bg-primary-color)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
                         }}
                     >
                         {translate('training_ongoing', language)}
@@ -405,15 +405,15 @@ const TrainingPage = () => {
                         onClick={() => handleTabChange("tab-2")}
                         style={{
                             flex: 1,
-                            border: (activeTab === "tab-2" && theme === "light") ? "1px solid white" : (activeTab === "tab-2" && theme !== "light") ? "1px solid var(--bg-primary-green)" : "none",
+                            border: (activeTab === "tab-2" && theme === "light") ? "1px solid white" : (activeTab === "tab-2" && theme !== "light") ? "1px solid var(--bg-primary-color)" : "none",
                             padding: "0px 15px",
                             textTransform: "capitalize",
                             borderRadius: "6px",
                             cursor: "pointer",
                             transition: "all 0.3s ease",
                             fontWeight: 700,
-                            background: (activeTab === "tab-2" && theme === "light") ? "white" : (activeTab === "tab-2" && theme !== "light") ? "var(--bg-primary-green-transparent)" : "transparent",
-                            color: activeTab === "tab-2" ? "var(--bg-primary-green)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
+                            background: (activeTab === "tab-2" && theme === "light") ? "white" : (activeTab === "tab-2" && theme !== "light") ? "var(--bg-primary-color-transparent)" : "transparent",
+                            color: activeTab === "tab-2" ? "var(--bg-primary-color)" : (theme === "light" ? "var(--color-dark-gray)" : "var(--color-gray)")
                         }}
                     >
                         {translate('training_coming_soon', language)}

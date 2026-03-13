@@ -50,7 +50,7 @@ const MapComponent = () => {
 
             <MapContainer center={location} zoom={15} style={{ height: "100%", width: "100%", borderRadius: "10px" }} zoomControl={false} >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Circle center={location} radius={80} fillColor="var(--bg-primary-green)" fillOpacity={0.5} stroke={true} />
+                <Circle center={location} radius={80} fillColor="var(--bg-primary-color)" fillOpacity={0.5} stroke={true} />
                 <ChangeView center={location} zoom={16} />
             </MapContainer>
         </Page>
